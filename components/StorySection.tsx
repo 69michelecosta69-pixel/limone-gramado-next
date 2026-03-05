@@ -27,7 +27,7 @@ export default function StorySection() {
 
         <figure className="surface-card overflow-hidden p-2">
           <Image
-            src="/assets/story.jpg"
+            src="/assets/story.png"
             alt="Maria servindo limoncello no carrinho Limone Gramado em evento"
             width={1200}
             height={900}

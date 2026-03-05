@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Limone Gramado",
     images: [
       {
-        url: "/assets/og.jpg",
+        url: "/assets/og.png",
         width: 1200,
         height: 630,
         alt: "Limoncello Limone Gramado com limões em fundo escuro",

@@ -42,7 +42,7 @@ export default function Hero() {
 
         <figure className="surface-card w-full overflow-hidden p-2 md:justify-self-end md:max-w-[860px]">
           <Image
-            src="/assets/hero.jpg"
+            src="/assets/hero.png"
             alt="Mesa elegante com taças de limoncello e limões em ambiente italiano"
             width={1400}
             height={1100}
