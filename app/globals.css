@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0e1113;
+  --surface: #171b1f;
+  --surface-soft: #1d2228;
+  --ink: #f8f5ee;
+  --muted: #cec6b5;
+  --gold: #c8a458;
+  --line: rgba(200, 164, 88, 0.28);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% 6%, rgba(200, 164, 88, 0.08), transparent 32%),
+    radial-gradient(circle at 86% 10%, rgba(233, 222, 154, 0.08), transparent 35%),
+    var(--bg);
+  color: var(--ink);
+}
+
+.section-spacing {
+  @apply py-16 md:py-24;
+}
+
+.container-limone {
+  @apply mx-auto w-[92vw] max-w-6xl;
+}
+
+.surface-card {
+  @apply rounded-2xl border border-[var(--line)] bg-[var(--surface)] shadow-[0_18px_40px_rgba(0,0,0,0.35)];
+}
+
+.btn-primary {
+  @apply inline-flex min-h-11 items-center justify-center rounded-full bg-gradient-to-br from-[#d5b372] to-[var(--gold)] px-5 py-2 text-sm font-bold text-[#302300] transition hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f0d488];
+}
+
+.btn-secondary {
+  @apply inline-flex min-h-11 items-center justify-center rounded-full border border-white/35 px-5 py-2 text-sm font-bold text-[var(--ink)] transition hover:-translate-y-0.5 hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f0d488];
+}
+
+.eyebrow {
+  @apply mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold)];
+}
+
+.eyebrow::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: var(--gold);
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #f0d488;
+  outline-offset: 2px;
+}
