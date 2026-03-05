@@ -11,7 +11,7 @@ export default function ProductSection() {
             width={1000}
             height={1200}
             sizes="(max-width: 768px) 92vw, 450px"
-            className="h-[360px] w-full rounded-xl object-cover md:h-[540px]"
+            className="h-auto w-full rounded-xl bg-[#0f1628] object-contain"
           />
         </figure>
 
