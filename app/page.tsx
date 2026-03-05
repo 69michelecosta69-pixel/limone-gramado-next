@@ -9,9 +9,20 @@ import ProductSection from "@/components/ProductSection";
 import StorySection from "@/components/StorySection";
 import WhereToFindSection from "@/components/WhereToFindSection";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Limone Gramado",
+  url: "https://www.limonegramado.com.br",
+  image: "https://www.limonegramado.com.br/assets/hero-main.jpg",
+  sameAs: ["https://instagram.com/limonegramado"],
+  description: "Limoncello artesanal produzido em pequenos lotes na Serra Gaúcha.",
+};
+
 export default function HomePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
       <main>
         <Hero />

@@ -29,8 +29,8 @@ export default function StorySection() {
           <Image
             src="/assets/story-main.jpg"
             alt="Maria servindo limoncello no carrinho Limone Gramado em evento"
-            width={1200}
-            height={900}
+            width={1024}
+            height={1536}
             sizes="(max-width: 768px) 92vw, 44vw"
             className="h-[320px] w-full rounded-xl bg-[#0f1628] object-contain md:h-[500px]"
           />

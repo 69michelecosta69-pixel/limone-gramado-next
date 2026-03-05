@@ -44,8 +44,8 @@ export default function Hero() {
           <Image
             src="/assets/hero-main.jpg"
             alt="Limoncello Limone Gramado com limões em fundo escuro"
-            width={1400}
-            height={1100}
+            width={1536}
+            height={1024}
             priority
             sizes="(max-width: 768px) 92vw, (max-width: 1280px) 50vw, 860px"
             className="h-[320px] w-full rounded-xl object-cover sm:h-[420px] md:h-[560px]"
