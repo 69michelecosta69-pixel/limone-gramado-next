@@ -42,8 +42,8 @@ export default function Hero() {
 
         <figure className="surface-card w-full overflow-hidden p-2 md:justify-self-end md:max-w-[860px]">
           <Image
-            src="/assets/hero.png"
-            alt="Mesa elegante com taças de limoncello e limões em ambiente italiano"
+            src="/assets/og.png"
+            alt="Limoncello Limone Gramado com limões em fundo escuro"
             width={1400}
             height={1100}
             priority
