@@ -6,7 +6,7 @@ export default function ProductSection() {
       <div className="container-limone grid items-center gap-8 md:grid-cols-[1fr_1.1fr]">
         <figure className="surface-card mx-auto w-full max-w-[450px] overflow-hidden p-2 shadow-[0_22px_42px_rgba(0,0,0,0.36)]">
           <Image
-            src="/assets/bottle.png"
+            src="/assets/product-main.jpg"
             alt="Garrafa de limoncello Limone Gramado com limões"
             width={1000}
             height={1200}
