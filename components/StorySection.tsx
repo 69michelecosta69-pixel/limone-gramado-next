@@ -32,7 +32,7 @@ export default function StorySection() {
             width={1200}
             height={900}
             sizes="(max-width: 768px) 92vw, 44vw"
-            className="h-[320px] w-full rounded-xl object-cover md:h-[500px]"
+            className="h-[320px] w-full rounded-xl bg-[#0f1628] object-contain md:h-[500px]"
           />
           <figcaption className="px-2 pb-1 pt-3 text-center text-xs font-semibold uppercase tracking-[0.1em] text-[var(--muted)]">
             Eventos & degustações (em breve)
