@@ -31,8 +31,8 @@ export default function WhereToFindSection() {
           <Image
             src="/assets/gramado-atmosfera.jpg"
             alt="Atmosfera de Gramado"
-            width={512}
-            height={512}
+            width={1024}
+            height={1536}
             sizes="(max-width: 768px) 92vw, (max-width: 1280px) 48vw, 720px"
             className="h-[320px] w-full rounded-xl bg-[#0f1628] object-contain sm:h-[420px] md:h-[500px]"
           />

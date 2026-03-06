@@ -8,8 +8,8 @@ export default function ProductSection() {
           <Image
             src="/assets/bottle-product.jpg"
             alt="Garrafa de limoncello Limone Gramado com limões"
-            width={512}
-            height={512}
+            width={760}
+            height={1024}
             sizes="(max-width: 768px) 92vw, 450px"
             className="h-auto w-full rounded-xl bg-[#0f1628] object-contain"
           />

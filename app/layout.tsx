@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/assets/hero-limoncello.jpg",
-        width: 512,
-        height: 512,
+        width: 1024,
+        height: 1536,
         alt: "Limoncello Limone Gramado com limões em fundo escuro",
       },
     ],

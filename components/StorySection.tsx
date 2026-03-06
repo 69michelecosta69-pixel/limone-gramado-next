@@ -29,8 +29,8 @@ export default function StorySection() {
           <Image
             src="/assets/maria-story.jpg"
             alt="Maria - cofundadora do Limone Gramado"
-            width={512}
-            height={512}
+            width={1024}
+            height={1536}
             sizes="(max-width: 768px) 92vw, 44vw"
             className="h-[320px] w-full rounded-xl bg-[#0f1628] object-contain md:h-[500px]"
           />
