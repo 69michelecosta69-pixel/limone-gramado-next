@@ -35,7 +35,7 @@ export default function EventsSection() {
             width={512}
             height={512}
             sizes="(max-width: 768px) 92vw, (max-width: 1280px) 48vw, 720px"
-            className="h-[340px] w-full rounded-xl object-cover sm:h-[420px] md:h-[520px]"
+            className="h-[340px] w-full rounded-xl bg-[#0f1628] object-contain sm:h-[420px] md:h-[520px]"
           />
         </figure>
       </div>

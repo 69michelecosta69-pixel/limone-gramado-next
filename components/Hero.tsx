@@ -48,7 +48,7 @@ export default function Hero() {
             height={512}
             priority
             sizes="(max-width: 768px) 92vw, (max-width: 1280px) 50vw, 860px"
-            className="h-[320px] w-full rounded-xl object-cover sm:h-[420px] md:h-[560px]"
+            className="h-[320px] w-full rounded-xl bg-[#0f1628] object-contain sm:h-[420px] md:h-[560px]"
           />
         </figure>
       </div>
