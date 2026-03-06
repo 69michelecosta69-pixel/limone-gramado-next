@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     siteName: "Limone Gramado",
     images: [
       {
-        url: "/assets/hero-main.jpg",
-        width: 1536,
-        height: 1024,
+        url: "/assets/hero-limoncello.jpg",
+        width: 512,
+        height: 512,
         alt: "Limoncello Limone Gramado com limões em fundo escuro",
       },
     ],
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: seoTitle,
     description: seoDescription,
-    images: ["/assets/hero-main.jpg"],
+    images: ["/assets/hero-limoncello.jpg"],
   },
 };
 

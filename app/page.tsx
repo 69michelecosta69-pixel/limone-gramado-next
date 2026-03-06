@@ -14,7 +14,7 @@ const jsonLd = {
   "@type": "Organization",
   name: "Limone Gramado",
   url: "https://www.limonegramado.com.br",
-  image: "https://www.limonegramado.com.br/assets/hero-main.jpg",
+  image: "https://www.limonegramado.com.br/assets/hero-limoncello.jpg",
   sameAs: ["https://instagram.com/limonegramado"],
   description: "Limoncello artesanal produzido em pequenos lotes na Serra Gaúcha.",
 };

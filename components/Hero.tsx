@@ -12,11 +12,11 @@ export default function Hero() {
             Limoncello artesanal para brindar o extraordinário
           </h1>
           <p className="max-w-2xl text-[var(--muted)]">
-            Pequenos lotes, limões selecionados e alma italiana - criado em Gramado para momentos especiais.
+            Inspirado na Itália e feito na Serra Gaúcha com limões selecionados em pequenos lotes.
           </p>
           <p className="mt-4 max-w-2xl text-[var(--muted)]">
-            Produzido com cuidado e inspirado na tradição italiana, o Limone Gramado nasce para acompanhar encontros,
-            celebrações e experiências únicas na Serra Gaúcha.
+            Produzido com cuidado e tradição, o Limone Gramado nasce para acompanhar encontros, celebrações e
+            experiências únicas em Gramado.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -42,10 +42,10 @@ export default function Hero() {
 
         <figure className="surface-card w-full overflow-hidden p-2 md:justify-self-end md:max-w-[860px]">
           <Image
-            src="/assets/hero-main.jpg"
-            alt="Limoncello Limone Gramado com limões em fundo escuro"
-            width={1536}
-            height={1024}
+            src="/assets/hero-limoncello.jpg"
+            alt="Gramado Limone Limoncello artesanal"
+            width={512}
+            height={512}
             priority
             sizes="(max-width: 768px) 92vw, (max-width: 1280px) 50vw, 860px"
             className="h-[320px] w-full rounded-xl object-cover sm:h-[420px] md:h-[560px]"
@@ -55,4 +55,3 @@ export default function Hero() {
     </section>
   );
 }
-
