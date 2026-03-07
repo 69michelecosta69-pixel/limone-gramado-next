@@ -50,7 +50,7 @@ const structuredData = [
       addressCountry: "BR",
     },
     url: siteUrl,
-    telephone: "+55-54-99999-9999",
+    telephone: "+55-62-98134-7722",
   },
 ];
 
@@ -73,3 +73,4 @@ export default function HomePage() {
     </>
   );
 }
+
