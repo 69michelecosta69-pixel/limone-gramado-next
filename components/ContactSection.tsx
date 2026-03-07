@@ -31,9 +31,7 @@ export default function ContactSection() {
           aria-label="Formulário de contato"
         >
           <input type="hidden" name="_subject" value="Contato site Limone Gramado" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://limonegramado.com.br/contato?enviado=1" />
-          <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
+          <input type="hidden" name="_captcha" value="false" />`r`n          <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
           <label className="text-sm font-semibold" htmlFor="nome">Nome</label>
           <input id="nome" name="nome" required className="min-h-11 rounded-xl border border-[var(--line)] bg-[#12161a] px-3" />
@@ -50,4 +48,6 @@ export default function ContactSection() {
     </section>
   );
 }
+
+
 
