@@ -14,7 +14,7 @@ export default function ContactSection() {
 
     const subject = encodeURIComponent("Contato site Limone Gramado");
     const body = encodeURIComponent(`Nome: ${nome}\nE-mail: ${email}\n\nMensagem:\n${mensagem}`);
-    window.location.href = `mailto:limonegramado@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@limonegramado.com.br?subject=${subject}&body=${body}`;
   }
 
   return (

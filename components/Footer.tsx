@@ -14,7 +14,7 @@ export default function Footer() {
             WhatsApp
           </a>
           {" | "}
-          <a href="mailto:limonegramado@gmail.com" className="text-[#e7d6a8]">
+          <a href="mailto:info@limonegramado.com.br" className="text-[#e7d6a8]">
             Email
           </a>
         </p>
