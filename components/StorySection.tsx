@@ -5,23 +5,25 @@ export default function StorySection() {
     <section id="historia" className="section-spacing">
       <div className="container-limone grid items-center gap-8 md:grid-cols-[1.1fr_1fr]">
         <div>
-          <p className="eyebrow">Nossa história</p>
-          <h2 className="mb-4 font-[var(--font-heading)] text-4xl font-semibold md:text-6xl">Michele, da Italia para Gramado</h2>
-          <p className="text-[var(--muted)]">Eu nasci na Italia e cresci em uma familia grande, sempre reunida em volta da mesa.</p>
-          <p className="mt-4 text-[var(--muted)]">
-            Desde pequeno, aprendi com minha mae e minha avo que comida boa, tempo em familia e hospitalidade andam
-            juntos. O limoncello sempre esteve presente nesses encontros, como um gesto de carinho depois do jantar.
+          <p className="eyebrow">Nossa historia</p>
+          <h2 className="mb-4 font-[var(--font-heading)] text-4xl font-semibold md:text-6xl">Da Italia para Gramado</h2>
+          <p className="text-[var(--muted)]">
+            Nasci na Italia e cresci em uma familia grande, sempre reunida em volta de uma mesa cheia de comida,
+            risadas e historias.
           </p>
           <p className="mt-4 text-[var(--muted)]">
-            Com os anos, transformei essa tradicao da minha infancia em metodo artesanal: selecao cuidadosa, processo
-            lento e respeito ao sabor autentico.
+            Desde pequeno aprendi com minha mae e minha avo que a comida nao e apenas alimento: e carinho, tradicao e
+            tempo compartilhado com quem amamos.
           </p>
           <p className="mt-4 text-[var(--muted)]">
-            Hoje, o Limone Gramado leva essa historia para quem visita a Serra Gaucha: um coracao italiano em um
-            coracao brasileiro, em cada taca servida.
+            Assim nasceu o Limone Gramado: um limoncello artesanal inspirado na tradicao italiana, preparado com
+            cuidado, paciencia e respeito pelos sabores autenticos.
           </p>
-          <a href="#contato" className="mt-5 inline-flex text-sm font-semibold text-[#e4cc8c] transition hover:text-[#f0dda8]">
-            Saiba mais
+          <p className="mt-4 text-[var(--muted)]">
+            Hoje, cada garrafa leva um pouco dessa historia para quem visita Gramado.
+          </p>
+          <a href="/historia" className="mt-5 inline-flex text-sm font-semibold text-[#e4cc8c] transition hover:text-[#f0dda8]">
+            Ler historia completa
           </a>
         </div>
 
@@ -42,4 +44,3 @@ export default function StorySection() {
     </section>
   );
 }
-
