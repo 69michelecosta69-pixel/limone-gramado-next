@@ -5,22 +5,22 @@ export default function StorySection() {
     <section id="historia" className="section-spacing">
       <div className="container-limone grid items-center gap-8 md:grid-cols-[1.1fr_1fr]">
         <div>
-          <p className="eyebrow">Nossa história</p>
+          <p className="eyebrow">Nossa História</p>
           <h2 className="mb-4 font-[var(--font-heading)] text-4xl font-semibold md:text-6xl">Da Itália para Gramado</h2>
           <p className="text-[var(--muted)]">
-            Nasci na Itália e cresci em uma família grande, sempre reunida em volta de uma mesa cheia de comida,
-            risadas e histórias.
+            Nasci na Itália e cresci em uma família grande, sempre reunida em volta de uma mesa cheia. Boas risadas e
+            histórias nunca faltavam.
           </p>
           <p className="mt-4 text-[var(--muted)]">
-            Desde pequeno, aprendi com minha mãe e minha avó que a comida não é apenas alimento: é carinho,
-            tradição e tempo compartilhado com quem amamos.
+            Desde pequeno aprendi com minha nonna que a comida não é apenas alimento — é carinho, tradição e tempo
+            compartilhado com quem amamos.
           </p>
           <p className="mt-4 text-[var(--muted)]">
             Assim nasceu o Limone Gramado: um limoncello artesanal inspirado na tradição italiana, preparado com
             cuidado, paciência e respeito pelos sabores autênticos.
           </p>
           <p className="mt-4 text-[var(--muted)]">
-            Hoje, cada garrafa leva um pouco dessa história para quem visita Gramado.
+            De um coração italiano para Gramado.
           </p>
           <a href="/historia" className="mt-5 inline-flex text-sm font-semibold text-[#e4cc8c] transition hover:text-[#f0dda8]">
             Ler história completa
