@@ -8,21 +8,56 @@ import Navbar from "@/components/Navbar";
 import ProductSection from "@/components/ProductSection";
 import StorySection from "@/components/StorySection";
 import WhereToFindSection from "@/components/WhereToFindSection";
+import { seoDescription, siteUrl } from "@/lib/seo";
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Limone Gramado",
-  url: "https://www.limonegramado.com.br",
-  image: "https://www.limonegramado.com.br/assets/hero-limoncello.jpg",
-  sameAs: ["https://instagram.com/limonegramado"],
-  description: "Limoncello artesanal produzido em pequenos lotes na Serra Gaúcha.",
-};
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Limone Gramado",
+    url: siteUrl,
+    logo: `${siteUrl}/assets/hero-limoncello.jpg`,
+    sameAs: ["https://instagram.com/limonegramado"],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Limoncello artesanal Limone Gramado",
+    description: seoDescription,
+    image: [`${siteUrl}/assets/bottle-product.jpg`, `${siteUrl}/assets/hero-limoncello.jpg`],
+    brand: {
+      "@type": "Brand",
+      name: "Limone Gramado",
+    },
+    category: "Licor de limão",
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/PreOrder",
+      priceCurrency: "BRL",
+      url: `${siteUrl}/produto`,
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Limone Gramado",
+    image: `${siteUrl}/assets/gramado-atmosfera.jpg`,
+    areaServed: "Gramado e Canela, RS",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Gramado",
+      addressRegion: "RS",
+      addressCountry: "BR",
+    },
+    url: siteUrl,
+    telephone: "+55-54-99999-9999",
+  },
+];
 
 export default function HomePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Navbar />
       <main>
         <Hero />

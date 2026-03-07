@@ -1,14 +1,13 @@
 import type { MetadataRoute } from "next";
-
-const siteUrl = "https://www.limonegramado.com.br";
+import { sitemapRoutes, siteUrl } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: siteUrl,
-      lastModified: new Date("2026-03-05"),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-  ];
+  const lastModified = new Date();
+
+  return sitemapRoutes.map((route, index) => ({
+    url: route === "/" ? siteUrl : `${siteUrl}${route}`,
+    lastModified,
+    changeFrequency: "weekly",
+    priority: index === 0 ? 1 : 0.8,
+  }));
 }

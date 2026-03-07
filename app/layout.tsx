@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { seoDescription, seoTitle, siteUrl } from "@/lib/seo";
 import "./globals.css";
 
 const headingFont = Cormorant_Garamond({
@@ -14,10 +15,6 @@ const bodyFont = Manrope({
   weight: ["400", "500", "600", "700"],
 });
 
-const siteUrl = "https://www.limonegramado.com.br";
-const seoTitle = "Limone Gramado | Limoncello artesanal da Serra Gaúcha";
-const seoDescription = "Limoncello artesanal produzido em pequenos lotes na Serra Gaúcha. Degustações e experiências em Gramado.";
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: seoTitle,
@@ -26,15 +23,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  keywords: [
-    "limoncello",
-    "limoncello artesanal",
-    "gramado",
-    "serra gaúcha",
-    "degustação",
-    "eventos",
-    "licor de limão",
-  ],
+  keywords: ["limoncello gramado", "licor de limao gramado", "limone gramado", "limoncello artesanal", "gramado"],
   robots: {
     index: true,
     follow: true,
@@ -49,7 +38,7 @@ export const metadata: Metadata = {
         url: "/assets/hero-limoncello.jpg",
         width: 1024,
         height: 1536,
-        alt: "Limoncello Limone Gramado com limões em fundo escuro",
+        alt: "Limoncello artesanal Limone Gramado",
       },
     ],
     locale: "pt_BR",
