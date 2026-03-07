@@ -1,22 +1,8 @@
 "use client";
 
-import type { FormEvent } from "react";
-
 const WHATSAPP_LINK = "https://wa.me/5562981347722?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20Limoncello%20Limone%20Gramado%20e%20disponibilidade%20para%20compra%2Fdegusta%C3%A7%C3%A3o%20em%20Gramado.";
 
 export default function ContactSection() {
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const nome = String(formData.get("nome") ?? "").trim();
-    const email = String(formData.get("email") ?? "").trim();
-    const mensagem = String(formData.get("mensagem") ?? "").trim();
-
-    const subject = encodeURIComponent("Contato site Limone Gramado");
-    const body = encodeURIComponent(`Nome: ${nome}\nE-mail: ${email}\n\nMensagem:\n${mensagem}`);
-    window.location.href = `mailto:info@limonegramado.com.br?subject=${subject}&body=${body}`;
-  }
-
   return (
     <section id="contato" className="section-spacing">
       <div className="container-limone grid gap-8 md:grid-cols-[1fr_1fr]">
@@ -38,7 +24,17 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="surface-card grid gap-3 p-6" aria-label="Formulário de contato">
+        <form
+          action="https://formsubmit.co/info@limonegramado.com.br"
+          method="POST"
+          className="surface-card grid gap-3 p-6"
+          aria-label="Formulário de contato"
+        >
+          <input type="hidden" name="_subject" value="Contato site Limone Gramado" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://limonegramado.com.br/contato?enviado=1" />
+          <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
+
           <label className="text-sm font-semibold" htmlFor="nome">Nome</label>
           <input id="nome" name="nome" required className="min-h-11 rounded-xl border border-[var(--line)] bg-[#12161a] px-3" />
 
@@ -48,11 +44,10 @@ export default function ContactSection() {
           <label className="text-sm font-semibold" htmlFor="mensagem">Mensagem</label>
           <textarea id="mensagem" name="mensagem" rows={5} required className="rounded-xl border border-[var(--line)] bg-[#12161a] px-3 py-2" />
 
-          <button type="submit" className="btn-primary mt-2">Enviar contato</button>
+          <button type="submit" className="btn-primary mt-2">Enviar contato NEXT-V1</button>
         </form>
       </div>
     </section>
   );
 }
-
 
