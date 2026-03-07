@@ -32,6 +32,7 @@ export default function ContactSection() {
         >
           <input type="hidden" name="_subject" value="Contato site Limone Gramado" />
           <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://www.limonegramado.com.br/contato?enviado=1" />
           <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
           <label className="text-sm font-semibold" htmlFor="nome">Nome</label>
@@ -49,9 +50,3 @@ export default function ContactSection() {
     </section>
   );
 }
-
-
-
-
-
-
