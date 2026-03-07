@@ -10,14 +10,19 @@ export const metadata: Metadata = {
   },
 };
 
-type ContatoPageProps = {
-  searchParams?: {
-    enviado?: string;
-  };
+type SearchParamsValue = string | string[] | undefined;
+type ContatoSearchParams = {
+  enviado?: SearchParamsValue;
 };
 
-export default function ContatoPage({ searchParams }: ContatoPageProps) {
-  const enviadoComSucesso = searchParams?.enviado === "1";
+type ContatoPageProps = {
+  searchParams?: Promise<ContatoSearchParams> | ContatoSearchParams;
+};
+
+export default async function ContatoPage({ searchParams }: ContatoPageProps) {
+  const resolvedSearchParams = searchParams ? await searchParams : undefined;
+  const enviado = resolvedSearchParams?.enviado;
+  const enviadoComSucesso = Array.isArray(enviado) ? enviado.includes("1") : enviado === "1";
 
   return (
     <main className="section-spacing">
