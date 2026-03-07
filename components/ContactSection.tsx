@@ -25,7 +25,7 @@ export default function ContactSection() {
         </div>
 
         <form
-          action="https://formsubmit.co/info@limonegramado.com.br"
+          action="https://formsubmit.co/32f3485ad8208f3fe295002ef1f321a2"
           method="POST"
           className="surface-card grid gap-3 p-6"
           aria-label="Formulário de contato"
@@ -49,6 +49,7 @@ export default function ContactSection() {
     </section>
   );
 }
+
 
 
 
