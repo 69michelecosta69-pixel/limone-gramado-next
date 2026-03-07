@@ -43,12 +43,13 @@ export default function ContactSection() {
           <label className="text-sm font-semibold" htmlFor="mensagem">Mensagem</label>
           <textarea id="mensagem" name="mensagem" rows={5} required className="rounded-xl border border-[var(--line)] bg-[#12161a] px-3 py-2" />
 
-          <button type="submit" className="btn-primary mt-2">Enviar contato NEXT-V1</button>
+          <button type="submit" className="btn-primary mt-2">Enviar contato</button>
         </form>
       </div>
     </section>
   );
 }
+
 
 
 
