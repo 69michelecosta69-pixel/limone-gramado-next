@@ -10,13 +10,28 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ContatoPage() {
+type ContatoPageProps = {
+  searchParams?: {
+    enviado?: string;
+  };
+};
+
+export default function ContatoPage({ searchParams }: ContatoPageProps) {
+  const enviadoComSucesso = searchParams?.enviado === "1";
+
   return (
     <main className="section-spacing">
       <section className="container-limone surface-card p-6 md:p-10">
         <p className="eyebrow">Contato</p>
         <h1 className="mb-4 font-[var(--font-heading)] text-4xl md:text-6xl">Fale com a Limone Gramado</h1>
         <p className="text-[var(--muted)]">Atendimento via WhatsApp e Instagram para pedidos, parcerias e degustações.</p>
+
+        {enviadoComSucesso ? (
+          <p className="mt-4 rounded-xl border border-[var(--line)] bg-[#13171a] px-4 py-3 text-sm text-[#e7d6a8]">
+            Mensagem enviada com sucesso. Obrigado pelo contato.
+          </p>
+        ) : null}
+
         <div className="mt-6 flex flex-wrap gap-3">
           <a
             className="btn-primary"
