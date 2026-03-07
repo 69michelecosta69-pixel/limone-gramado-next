@@ -27,7 +27,7 @@ export default function StorySection() {
 
         <figure className="surface-card overflow-hidden p-2">
           <Image
-            src="/assets/maria-story.jpg"
+            src="/assets/michele-story.png"
             alt="Historia do fundador do Limone Gramado"
             width={1024}
             height={1536}
@@ -42,3 +42,4 @@ export default function StorySection() {
     </section>
   );
 }
+
