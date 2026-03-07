@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container-limone grid gap-1 text-sm text-[var(--muted)]">
         <p className="font-semibold text-[var(--ink)]">Limone Gramado</p>
         <p>Gramado - RS - Brasil</p>
-        <p>Contato</p>
+        <p>Telefone: +55 (62) 98134-7722</p>
         <p>
           <a href="https://instagram.com/limonegramado" target="_blank" rel="noreferrer" className="text-[#e7d6a8]">
             Instagram
@@ -15,13 +15,11 @@ export default function Footer() {
           </a>
           {" | "}
           <a href="mailto:info@limonegramado.com.br" className="text-[#e7d6a8]">
-            Email
+            E-mail
           </a>
         </p>
-        <p>CNPJ em regularização</p>
+        <p>CNPJ: em regularização</p>
       </div>
     </footer>
   );
 }
-
-
