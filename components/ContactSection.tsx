@@ -1,5 +1,3 @@
-"use client";
-
 const WHATSAPP_LINK = "https://wa.me/5562981347722?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20Limoncello%20Limone%20Gramado%20e%20disponibilidade%20para%20compra%2Fdegusta%C3%A7%C3%A3o%20em%20Gramado.";
 
 export default function ContactSection() {
@@ -50,3 +48,4 @@ export default function ContactSection() {
     </section>
   );
 }
+
