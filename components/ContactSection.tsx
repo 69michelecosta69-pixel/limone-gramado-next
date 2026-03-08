@@ -11,6 +11,7 @@ export default function ContactSection() {
             Quer saber mais sobre o Limone Gramado ou receber novidades sobre degustações e eventos? Entre em contato
             conosco.
           </p>
+          <p className="mt-3 text-sm text-[#e5cf97]">Resposta em até 24 horas úteis.</p>
 
           <div className="mt-6 flex flex-wrap gap-3">
             <a className="btn-primary" href={WHATSAPP_LINK} target="_blank" rel="noreferrer">
@@ -48,4 +49,3 @@ export default function ContactSection() {
     </section>
   );
 }
-

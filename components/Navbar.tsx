@@ -17,13 +17,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[#0e1113e0] backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[rgba(9,13,26,0.88)] backdrop-blur">
       <div className="container-limone flex min-h-[74px] items-center justify-between gap-4">
         <a href="#inicio" className="inline-flex items-center gap-2" aria-label="Limone Gramado, voltar ao topo">
-          <span className="inline-grid h-10 w-10 place-items-center rounded-full bg-gradient-to-br from-[#dfc286] to-[var(--gold)] font-[var(--font-heading)] text-xl text-[#3c2f05]">
+          <span className="inline-grid h-10 w-10 place-items-center rounded-full border border-[var(--line)] bg-[#111b36] font-[var(--font-heading)] text-xl text-[#ddc27f]">
             L
           </span>
-          <span className="font-[var(--font-heading)] text-2xl">Limone Gramado</span>
+          <span className="font-[var(--font-heading)] text-2xl text-[#f2e7cc]">Limone Gramado</span>
         </a>
 
         <button
