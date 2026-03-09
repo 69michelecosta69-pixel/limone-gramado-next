@@ -12,17 +12,17 @@ export default function WhereToFindSection() {
             Serra Gaúcha para criar momentos especiais.
           </p>
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-            <article className="surface-card p-6">
-              <h3 className="mb-2 break-words font-[var(--font-heading)] text-2xl lg:text-3xl">Gramado/RS</h3>
-              <p className="text-[var(--muted)]">Em breve</p>
+            <article className="surface-card flex min-h-[190px] flex-col p-6">
+              <h3 className="mb-2 break-words font-[var(--font-heading)] text-2xl leading-tight lg:text-3xl">Gramado/RS</h3>
+              <p className="mt-auto text-[var(--muted)]">Em breve</p>
             </article>
-            <article className="surface-card p-6">
-              <h3 className="mb-2 break-words font-[var(--font-heading)] text-2xl lg:text-3xl">Pontos parceiros</h3>
-              <p className="text-[var(--muted)]">Em breve</p>
+            <article className="surface-card flex min-h-[190px] flex-col p-6">
+              <h3 className="mb-2 break-words font-[var(--font-heading)] text-2xl leading-tight lg:text-3xl">Pontos parceiros</h3>
+              <p className="mt-auto text-[var(--muted)]">Em breve</p>
             </article>
-            <article className="surface-card p-6 sm:col-span-2 xl:col-span-1">
-              <h3 className="mb-2 break-words font-[var(--font-heading)] text-2xl lg:text-3xl">Eventos</h3>
-              <p className="text-[var(--muted)]">Em breve</p>
+            <article className="surface-card flex min-h-[190px] flex-col p-6 sm:col-span-2 xl:col-span-1">
+              <h3 className="mb-2 break-words font-[var(--font-heading)] text-2xl leading-tight lg:text-3xl">Eventos</h3>
+              <p className="mt-auto text-[var(--muted)]">Em breve</p>
             </article>
           </div>
         </div>
