@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "Limone Gramado",
     images: [
       {
-        url: "/assets/og-limone-1200x630.png",
+        url: "/assets/og-limone-1200x630.jpg",
         width: 1200,
         height: 630,
         alt: "Limoncello artesanal Limone Gramado",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: seoTitle,
     description: seoDescription,
-    images: ["/assets/og-limone-1200x630.png"],
+    images: ["/assets/og-limone-1200x630.jpg"],
   },
 };
 
@@ -59,5 +59,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     </html>
   );
 }
+
 
 
