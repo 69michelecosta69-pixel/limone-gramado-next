@@ -26,6 +26,9 @@ export default function Footer() {
           </a>
         </p>
         <p>CNPJ: em regularização</p>
+        <p className="text-xs text-[var(--muted)]">
+          © {new Date().getFullYear()} Limone Gramado. Todos os direitos reservados.
+        </p>
 
         <p className="pt-2 text-xs text-[var(--muted)]">
           <Link href="/politica-de-privacidade" className="text-[#e7d6a8] hover:text-[#f0ddb1]">
@@ -40,3 +43,4 @@ export default function Footer() {
     </footer>
   );
 }
+

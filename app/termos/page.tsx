@@ -28,7 +28,15 @@ export default function TermosPage() {
         <h2 className="mt-8 mb-2 font-[var(--font-heading)] text-2xl">2. Propriedade intelectual</h2>
         <p className="text-[var(--muted)]">
           Textos, imagens, identidade visual e demais conteúdos deste site são de titularidade da Limone Gramado ou de
-          seus licenciantes, sendo vedada reprodução sem autorização.
+          seus licenciantes e são protegidos pela legislação de direitos autorais e propriedade intelectual.
+        </p>
+        <p className="mt-3 text-[var(--muted)]">
+          É proibida a reprodução, distribuição, publicação, edição, cópia comercial, uso em anúncios ou reutilização,
+          total ou parcial, sem autorização prévia e por escrito da Limone Gramado.
+        </p>
+        <p className="mt-3 text-[var(--muted)]">
+          Para solicitar autorização de uso de imagens ou textos, entre em contato por
+          <a className="text-[#e7d6a8]" href="mailto:info@limonegramado.com.br"> info@limonegramado.com.br</a>.
         </p>
 
         <h2 className="mt-8 mb-2 font-[var(--font-heading)] text-2xl">3. Contato e atendimento</h2>
@@ -60,3 +68,4 @@ export default function TermosPage() {
     </main>
   );
 }
+
