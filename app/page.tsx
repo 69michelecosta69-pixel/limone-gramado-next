@@ -20,19 +20,7 @@ const structuredData = [
     logo: `${siteUrl}/assets/hero-limoncello.jpg`,
     sameAs: ["https://instagram.com/limonegramado"],
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: "Limoncello artesanal Limone Gramado",
-    description: seoDescription,
-    url: `${siteUrl}/produto`,
-    image: [`${siteUrl}/assets/bottle-product.jpg`, `${siteUrl}/assets/hero-limoncello.jpg`],
-    brand: {
-      "@type": "Brand",
-      name: companyProfile.brandName,
-    },
-    category: "Licor de limão",
-  },
+
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -81,6 +69,7 @@ export default function HomePage() {
     </>
   );
 }
+
 
 
 
