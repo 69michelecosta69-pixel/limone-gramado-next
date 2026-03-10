@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { companyProfile } from "@/lib/company";
 
 export const metadata: Metadata = {
   title: "Termos de Uso | Limone Gramado",
@@ -52,10 +53,10 @@ export default function TermosPage() {
         </p>
 
         <h2 className="mt-8 mb-2 font-[var(--font-heading)] text-2xl">5. Informações da empresa</h2>
-        <p className="text-[var(--muted)]">Razão/Nome: Limone Gramado</p>
-        <p className="text-[var(--muted)]">CNPJ: em regularização</p>
-        <p className="text-[var(--muted)]">E-mail: info@limonegramado.com.br</p>
-        <p className="text-[var(--muted)]">Telefone: +55 (62) 98134-7722</p>
+        <p className="text-[var(--muted)]">Razão/Nome: {companyProfile.legalName}</p>
+        <p className="text-[var(--muted)]">CNPJ: {companyProfile.cnpj}</p>
+        <p className="text-[var(--muted)]">E-mail: {companyProfile.email}</p>
+        <p className="text-[var(--muted)]">Telefone: {companyProfile.phoneDisplay}</p>
 
         <h2 className="mt-8 mb-2 font-[var(--font-heading)] text-2xl">6. Foro e legislação</h2>
         <p className="text-[var(--muted)]">
@@ -68,4 +69,6 @@ export default function TermosPage() {
     </main>
   );
 }
+
+
 

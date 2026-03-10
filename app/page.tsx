@@ -8,15 +8,14 @@ import Navbar from "@/components/Navbar";
 import ProductSection from "@/components/ProductSection";
 import StorySection from "@/components/StorySection";
 import WhereToFindSection from "@/components/WhereToFindSection";
+import { companyProfile, whatsappLink } from "@/lib/company";
 import { seoDescription, siteUrl } from "@/lib/seo";
-
-const WHATSAPP_LINK = "https://wa.me/5562981347722?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20Limoncello%20Limone%20Gramado%20e%20disponibilidade%20para%20compra%2Fdegusta%C3%A7%C3%A3o%20em%20Gramado.";
 
 const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Limone Gramado",
+    name: companyProfile.brandName,
     url: siteUrl,
     logo: `${siteUrl}/assets/hero-limoncello.jpg`,
     sameAs: ["https://instagram.com/limonegramado"],
@@ -26,33 +25,28 @@ const structuredData = [
     "@type": "Product",
     name: "Limoncello artesanal Limone Gramado",
     description: seoDescription,
+    url: `${siteUrl}/produto`,
     image: [`${siteUrl}/assets/bottle-product.jpg`, `${siteUrl}/assets/hero-limoncello.jpg`],
     brand: {
       "@type": "Brand",
-      name: "Limone Gramado",
+      name: companyProfile.brandName,
     },
     category: "Licor de limão",
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/PreOrder",
-      priceCurrency: "BRL",
-      url: `${siteUrl}/produto`,
-    },
   },
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Limone Gramado",
+    name: companyProfile.brandName,
     image: `${siteUrl}/assets/gramado-atmosfera.jpg`,
     areaServed: "Gramado e Canela, RS",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Gramado",
-      addressRegion: "RS",
-      addressCountry: "BR",
+      addressLocality: companyProfile.address.locality,
+      addressRegion: companyProfile.address.region,
+      addressCountry: companyProfile.address.country,
     },
     url: siteUrl,
-    telephone: "+55-62-98134-7722",
+    telephone: companyProfile.phoneSchema,
   },
 ];
 
@@ -74,7 +68,7 @@ export default function HomePage() {
 
       <div className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--line)] bg-[rgba(9,13,26,0.94)] p-3 backdrop-blur md:hidden">
         <div className="container-limone flex gap-2">
-          <a className="btn-primary flex-1" href={WHATSAPP_LINK} target="_blank" rel="noreferrer">
+          <a className="btn-primary flex-1" href={whatsappLink} target="_blank" rel="noreferrer">
             WhatsApp agora
           </a>
           <a className="btn-secondary" href="#contato">
@@ -87,3 +81,6 @@ export default function HomePage() {
     </>
   );
 }
+
+
+

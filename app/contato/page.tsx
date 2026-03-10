@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { whatsappLink } from "@/lib/company";
 import { siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -40,7 +41,7 @@ export default async function ContatoPage({ searchParams }: ContatoPageProps) {
         <div className="mt-6 flex flex-wrap gap-3">
           <a
             className="btn-primary"
-            href="https://wa.me/5562981347722?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20Limoncello%20Limone%20Gramado%20e%20disponibilidade%20para%20compra%2Fdegusta%C3%A7%C3%A3o%20em%20Gramado."
+            href={whatsappLink}
             target="_blank"
             rel="noreferrer"
           >
@@ -54,3 +55,5 @@ export default async function ContatoPage({ searchParams }: ContatoPageProps) {
     </main>
   );
 }
+
+

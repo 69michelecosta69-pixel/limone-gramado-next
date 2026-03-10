@@ -1,4 +1,4 @@
-const WHATSAPP_LINK = "https://wa.me/5562981347722?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20Limoncello%20Limone%20Gramado%20e%20disponibilidade%20para%20compra%2Fdegusta%C3%A7%C3%A3o%20em%20Gramado.";
+import { whatsappLink } from "@/lib/company";
 
 export default function ContactSection() {
   return (
@@ -14,7 +14,7 @@ export default function ContactSection() {
           <p className="mt-3 text-sm text-[#e5cf97]">Resposta em até 24 horas úteis.</p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <a className="btn-primary" href={WHATSAPP_LINK} target="_blank" rel="noreferrer">
+            <a className="btn-primary" href={whatsappLink} target="_blank" rel="noreferrer">
               Falar no WhatsApp
             </a>
             <a className="btn-secondary" href="https://instagram.com/limonegramado" target="_blank" rel="noreferrer">
@@ -49,3 +49,5 @@ export default function ContactSection() {
     </section>
   );
 }
+
+

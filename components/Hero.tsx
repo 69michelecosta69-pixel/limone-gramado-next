@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const WHATSAPP_LINK = "https://wa.me/5562981347722?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20Limoncello%20Limone%20Gramado%20e%20disponibilidade%20para%20compra%2Fdegusta%C3%A7%C3%A3o%20em%20Gramado.";
+import { whatsappLink } from "@/lib/company";
 
 export default function Hero() {
   return (
@@ -31,7 +31,7 @@ export default function Hero() {
           <p className="mt-4 text-xs text-[var(--muted)]">Disponível em breve. Venda somente após regularização.</p>
 
           <div className="mt-5 flex flex-wrap gap-3">
-            <a className="text-sm font-semibold text-[#e7d6a8] transition hover:text-[#f0ddb1]" href={WHATSAPP_LINK} target="_blank" rel="noreferrer">
+            <a className="text-sm font-semibold text-[#e7d6a8] transition hover:text-[#f0ddb1]" href={whatsappLink} target="_blank" rel="noreferrer">
               Falar no WhatsApp
             </a>
             <a className="text-sm font-semibold text-[#e7d6a8] transition hover:text-[#f0ddb1]" href="https://instagram.com/limonegramado" target="_blank" rel="noreferrer">
@@ -55,3 +55,5 @@ export default function Hero() {
     </section>
   );
 }
+
+
