@@ -3,8 +3,9 @@ import Link from "next/link";
 import { siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Eventos | Limone Gramado",
-  description: "Carrinho e degustações Limone Gramado para eventos em Gramado e Canela.",
+  title: "Limoncello para Eventos em Gramado | Limone Gramado",
+  description:
+    "Carrinho de limoncello, degustações e ativações da Limone Gramado para eventos, hotéis, restaurantes e experiências em Gramado e Canela.",
   alternates: {
     canonical: "/eventos",
   },
