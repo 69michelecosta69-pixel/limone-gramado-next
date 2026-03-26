@@ -18,7 +18,7 @@ const structuredData = [
     name: companyProfile.brandName,
     url: siteUrl,
     logo: `${siteUrl}/assets/hero-limoncello.jpg`,
-    sameAs: ["https://instagram.com/limonegramado"],
+    sameAs: ["https://instagram.com/limone_gramado"],
   },
 
   {

@@ -17,7 +17,7 @@ export default function ContactSection() {
             <a className="btn-primary" href={whatsappLink} target="_blank" rel="noreferrer">
               Falar no WhatsApp
             </a>
-            <a className="btn-secondary" href="https://instagram.com/limonegramado" target="_blank" rel="noreferrer">
+            <a className="btn-secondary" href="https://instagram.com/limone_gramado" target="_blank" rel="noreferrer">
               Ver Instagram
             </a>
           </div>

@@ -34,7 +34,7 @@ export default function Hero() {
             <a className="text-sm font-semibold text-[#e7d6a8] transition hover:text-[#f0ddb1]" href={whatsappLink} target="_blank" rel="noreferrer">
               Falar no WhatsApp
             </a>
-            <a className="text-sm font-semibold text-[#e7d6a8] transition hover:text-[#f0ddb1]" href="https://instagram.com/limonegramado" target="_blank" rel="noreferrer">
+            <a className="text-sm font-semibold text-[#e7d6a8] transition hover:text-[#f0ddb1]" href="https://instagram.com/limone_gramado" target="_blank" rel="noreferrer">
               Ver Instagram
             </a>
           </div>

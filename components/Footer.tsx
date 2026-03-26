@@ -9,7 +9,7 @@ export default function Footer() {
         <p>{companyProfile.locationDisplay}</p>
         <p>Telefone: {companyProfile.phoneDisplay}</p>
         <p>
-          <a href="https://instagram.com/limonegramado" target="_blank" rel="noreferrer" className="text-[#e7d6a8]">
+          <a href="https://instagram.com/limone_gramado" target="_blank" rel="noreferrer" className="text-[#e7d6a8]">
             Instagram
           </a>
           {" | "}
