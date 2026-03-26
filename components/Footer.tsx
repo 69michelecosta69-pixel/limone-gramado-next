@@ -22,8 +22,8 @@ export default function Footer() {
             WhatsApp
           </a>
           {" | "}
-          <a href={`mailto:${companyProfile.email}`} className="text-[#e7d6a8]">
-            E-mail
+          <a href={`mailto:${companyProfile.email}`} className="text-[#e7d6a8] break-all">
+            {companyProfile.email}
           </a>
         </p>
         <p>CNPJ: {companyProfile.cnpj}</p>
