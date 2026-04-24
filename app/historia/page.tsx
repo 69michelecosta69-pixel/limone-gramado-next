@@ -56,7 +56,7 @@ export default function HistoriaPage() {
             width={1152}
             height={1536}
             sizes="(max-width: 768px) 92vw, 860px"
-            className="h-auto w-full rounded-xl object-cover"
+            className="mx-auto h-auto max-h-[300px] w-auto max-w-full rounded-xl object-cover md:max-h-[420px]"
           />
           <figcaption className="px-2 pb-1 pt-3 text-center text-xs font-semibold uppercase tracking-[0.1em] text-[var(--muted)]">
             O cuidado artesanal com os limões faz parte da nossa história
