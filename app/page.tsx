@@ -29,6 +29,8 @@ const structuredData = [
     areaServed: "Gramado e Canela, RS",
     address: {
       "@type": "PostalAddress",
+      streetAddress: companyProfile.address.streetAddress,
+      postalCode: companyProfile.address.postalCode,
       addressLocality: companyProfile.address.locality,
       addressRegion: companyProfile.address.region,
       addressCountry: companyProfile.address.country,

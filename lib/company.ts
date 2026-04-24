@@ -6,13 +6,13 @@ export const companyProfile = {
   phoneDisplay: "+55 (62) 98134-7722",
   phoneSchema: "+55-62-98134-7722",
   phoneE164Digits: "5562981347722",
-  locationDisplay: "Gramado - RS - Brasil",
+  locationDisplay: "Linha 28, 820 - Gramado - RS - Brasil",
   address: {
     locality: "Gramado",
     region: "RS",
     country: "BR",
-    streetAddress: "",
-    postalCode: "",
+    streetAddress: "Linha 28, 820",
+    postalCode: "95670-000",
   },
 } as const;
 
