@@ -30,7 +30,7 @@ export default function EventsSection() {
 
         <figure className="surface-card w-full overflow-hidden p-2 md:justify-self-end md:max-w-[720px]">
           <Image
-            src="/assets/degustacao.jpg"
+            src="/assets/degustacao-wm.jpg"
             alt="Degustação de Limoncello em eventos"
             width={1024}
             height={1536}

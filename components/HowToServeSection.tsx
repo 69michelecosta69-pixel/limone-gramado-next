@@ -28,7 +28,7 @@ export default function HowToServeSection() {
 
         <figure className="surface-card w-full overflow-hidden p-2 md:justify-self-end md:max-w-[720px]">
           <Image
-            src="/assets/como-servir.jpg"
+            src="/assets/como-servir-wm.jpg"
             alt="Limoncello bem gelado servido em pequeno copo"
             width={760}
             height={1024}

@@ -51,7 +51,7 @@ export default function HistoriaPage() {
 
         <figure className="mt-8 overflow-hidden rounded-2xl border border-[var(--line)] bg-[#0f1628]/40 p-2">
           <Image
-            src="/assets/michele-process.jpg"
+            src="/assets/michele-process-wm.jpg"
             alt="Michele preparando limões para o limoncello artesanal Limone Gramado"
             width={1152}
             height={1536}

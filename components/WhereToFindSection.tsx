@@ -29,7 +29,7 @@ export default function WhereToFindSection() {
 
         <figure className="surface-card w-full overflow-hidden p-2 lg:justify-self-end lg:max-w-[720px]">
           <Image
-            src="/assets/gramado-atmosfera.jpg"
+            src="/assets/gramado-atmosfera-wm.jpg"
             alt="Atmosfera de Gramado"
             width={1024}
             height={1536}

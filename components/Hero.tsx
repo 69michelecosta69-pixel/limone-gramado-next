@@ -42,7 +42,7 @@ export default function Hero() {
 
         <figure className="surface-card w-full overflow-hidden p-2 md:justify-self-end md:max-w-[860px]">
           <Image
-            src="/assets/hero-limoncello.jpg"
+            src="/assets/hero-limoncello-wm.jpg"
             alt="Limoncello artesanal Limone Gramado"
             width={1024}
             height={1536}

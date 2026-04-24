@@ -17,7 +17,7 @@ const structuredData = [
     "@type": "Organization",
     name: companyProfile.brandName,
     url: siteUrl,
-    logo: `${siteUrl}/assets/hero-limoncello.jpg`,
+    logo: `${siteUrl}/assets/hero-limoncello-wm.jpg`,
     sameAs: ["https://instagram.com/limone_gramado"],
   },
 
@@ -25,7 +25,7 @@ const structuredData = [
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: companyProfile.brandName,
-    image: `${siteUrl}/assets/gramado-atmosfera.jpg`,
+    image: `${siteUrl}/assets/gramado-atmosfera-wm.jpg`,
     areaServed: "Gramado e Canela, RS",
     address: {
       "@type": "PostalAddress",
