@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { siteUrl } from "@/lib/seo";
 
@@ -47,6 +48,20 @@ export default function HistoriaPage() {
           Com o tempo, essa memória de família virou inspiração. Decidi transformar aquela tradição em algo que pudesse
           compartilhar com outras pessoas.
         </p>
+
+        <figure className="mt-8 overflow-hidden rounded-2xl border border-[var(--line)] bg-[#0f1628]/40 p-2">
+          <Image
+            src="/assets/michele-process.jpg"
+            alt="Michele preparando limões para o limoncello artesanal Limone Gramado"
+            width={1152}
+            height={1536}
+            sizes="(max-width: 768px) 92vw, 860px"
+            className="h-auto w-full rounded-xl object-cover"
+          />
+          <figcaption className="px-2 pb-1 pt-3 text-center text-xs font-semibold uppercase tracking-[0.1em] text-[var(--muted)]">
+            O cuidado artesanal com os limões faz parte da nossa história
+          </figcaption>
+        </figure>
 
         <p className="mt-4 text-[var(--muted)]">Assim nasceu o Limone Gramado.</p>
 
