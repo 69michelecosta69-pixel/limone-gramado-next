@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import { whatsappLink } from "@/lib/company";
-
 export default function Hero() {
   return (
     <section id="inicio" className="section-spacing">
@@ -31,9 +29,6 @@ export default function Hero() {
           <p className="mt-4 text-xs text-[var(--muted)]">Disponível em breve. Venda somente após regularização.</p>
 
           <div className="mt-5 flex flex-wrap gap-3">
-            <a className="text-sm font-semibold text-[#e7d6a8] transition hover:text-[#f0ddb1]" href={whatsappLink} target="_blank" rel="noreferrer">
-              Falar no WhatsApp
-            </a>
             <a className="text-sm font-semibold text-[#e7d6a8] transition hover:text-[#f0ddb1]" href="https://instagram.com/limone_gramado" target="_blank" rel="noreferrer">
               Ver Instagram
             </a>

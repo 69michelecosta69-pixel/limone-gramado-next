@@ -8,8 +8,8 @@ import Navbar from "@/components/Navbar";
 import ProductSection from "@/components/ProductSection";
 import StorySection from "@/components/StorySection";
 import WhereToFindSection from "@/components/WhereToFindSection";
-import { companyProfile, whatsappLink } from "@/lib/company";
-import { seoDescription, siteUrl } from "@/lib/seo";
+import { companyProfile } from "@/lib/company";
+import { siteUrl } from "@/lib/seo";
 
 const structuredData = [
   {
@@ -36,7 +36,6 @@ const structuredData = [
       addressCountry: companyProfile.address.country,
     },
     url: siteUrl,
-    telephone: companyProfile.phoneSchema,
   },
 ];
 
@@ -58,11 +57,11 @@ export default function HomePage() {
 
       <div className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--line)] bg-[rgba(9,13,26,0.94)] p-3 backdrop-blur md:hidden">
         <div className="container-limone flex gap-2">
-          <a className="btn-primary flex-1" href={whatsappLink} target="_blank" rel="noreferrer">
-            WhatsApp agora
-          </a>
-          <a className="btn-secondary" href="#contato">
+          <a className="btn-primary flex-1" href="#contato">
             Contato
+          </a>
+          <a className="btn-secondary" href="https://instagram.com/limone_gramado" target="_blank" rel="noreferrer">
+            Instagram
           </a>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { companyProfile, whatsappLink } from "@/lib/company";
+import { companyProfile } from "@/lib/company";
 
 export default function Footer() {
   return (
@@ -7,19 +7,9 @@ export default function Footer() {
       <div className="container-limone grid gap-2 text-sm text-[var(--muted)]">
         <p className="font-semibold text-[var(--ink)]">{companyProfile.brandName}</p>
         <p>{companyProfile.locationDisplay}</p>
-        <p>Telefone: {companyProfile.phoneDisplay}</p>
         <p>
           <a href="https://instagram.com/limone_gramado" target="_blank" rel="noreferrer" className="text-[#e7d6a8]">
             Instagram
-          </a>
-          {" | "}
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noreferrer"
-            className="text-[#e7d6a8]"
-          >
-            WhatsApp
           </a>
           {" | "}
           <a href={`mailto:${companyProfile.email}`} className="text-[#e7d6a8] break-all">

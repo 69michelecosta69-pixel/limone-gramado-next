@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { whatsappLink } from "@/lib/company";
 import { siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -30,7 +29,7 @@ export default async function ContatoPage({ searchParams }: ContatoPageProps) {
       <section className="container-limone surface-card p-6 md:p-10">
         <p className="eyebrow">Contato</p>
         <h1 className="mb-4 font-[var(--font-heading)] text-4xl md:text-6xl">Fale com a Limone Gramado</h1>
-        <p className="text-[var(--muted)]">Atendimento via WhatsApp e Instagram para pedidos, parcerias e degustações.</p>
+        <p className="text-[var(--muted)]">Atendimento via formulário e Instagram para pedidos, parcerias e degustações.</p>
 
         {enviadoComSucesso ? (
           <p className="mt-4 rounded-xl border border-[var(--line)] bg-[#13171a] px-4 py-3 text-sm text-[#e7d6a8]">
@@ -39,17 +38,12 @@ export default async function ContatoPage({ searchParams }: ContatoPageProps) {
         ) : null}
 
         <div className="mt-6 flex flex-wrap gap-3">
-          <a
-            className="btn-primary"
-            href={whatsappLink}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Falar no WhatsApp
-          </a>
-          <Link href={`${siteUrl}/#contato`} className="btn-secondary">
+          <Link href={`${siteUrl}/#contato`} className="btn-primary">
             Abrir formulário
           </Link>
+          <a className="btn-secondary" href="https://instagram.com/limone_gramado" target="_blank" rel="noreferrer">
+            Ver Instagram
+          </a>
         </div>
       </section>
     </main>
