@@ -7,6 +7,7 @@ export default function Footer() {
       <div className="container-limone grid gap-2 text-sm text-[var(--muted)]">
         <p className="font-semibold text-[var(--ink)]">{companyProfile.brandName}</p>
         <p>{companyProfile.locationDisplay}</p>
+        <p>Telefone: {companyProfile.phoneDisplay}</p>
         <p>
           <a href="https://instagram.com/limone_gramado" target="_blank" rel="noreferrer" className="text-[#e7d6a8]">
             Instagram

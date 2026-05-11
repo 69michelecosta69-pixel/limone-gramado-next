@@ -36,6 +36,7 @@ const structuredData = [
       addressCountry: companyProfile.address.country,
     },
     url: siteUrl,
+    telephone: companyProfile.phoneSchema,
   },
 ];
 
