@@ -1,25 +1,45 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #090d1a;
-  --surface: #0e1428;
-  --surface-soft: #121a31;
-  --ink: #f5efe2;
-  --muted: #cbbd9e;
+  --bg: #070d1b;
+  --surface: #0d1732;
+  --surface-soft: #122245;
+  --ink: #f8f2e6;
+  --muted: #d2c1a0;
   --gold: #c9a75b;
-  --line: rgba(201, 167, 91, 0.36);
+  --gold-soft: #ecd7a5;
+  --line: rgba(201, 167, 91, 0.34);
+  --shadow-gold: rgba(201, 167, 91, 0.22);
 }
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
   background:
-    radial-gradient(circle at 12% 8%, rgba(201, 167, 91, 0.12), transparent 34%),
-    radial-gradient(circle at 86% 10%, rgba(11, 20, 44, 0.5), transparent 42%),
-    linear-gradient(180deg, #0a1020 0%, var(--bg) 58%);
+    radial-gradient(circle at 14% 8%, rgba(201, 167, 91, 0.14), transparent 34%),
+    radial-gradient(circle at 86% 10%, rgba(35, 60, 110, 0.22), transparent 44%),
+    linear-gradient(180deg, #081225 0%, var(--bg) 58%);
   color: var(--ink);
+  font-feature-settings: "liga" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+p,
+li {
+  line-height: 1.65;
 }
 
 .section-spacing {
@@ -31,33 +51,36 @@ body {
 }
 
 .surface-card {
-  @apply rounded-2xl border border-[var(--line)] bg-[var(--surface)] shadow-[0_20px_46px_rgba(0,0,0,0.42)]
-    ring-1 ring-inset ring-[rgba(201,167,91,0.10)];
+  @apply rounded-2xl border border-[var(--line)]
+    bg-[linear-gradient(180deg,rgba(255,255,255,0.015),rgba(255,255,255,0)),var(--surface)]
+    shadow-[0_24px_52px_rgba(0,0,0,0.46)] ring-1 ring-inset ring-[rgba(201,167,91,0.12)];
 }
 
 .btn-primary {
-  @apply inline-flex min-h-11 items-center justify-center rounded-full border border-[#d8bb79]
-    bg-gradient-to-b from-[#dec485] to-[var(--gold)] px-5 py-2 text-sm font-bold text-[#2f250f] transition
-    hover:-translate-y-0.5 hover:brightness-105 focus-visible:outline-2 focus-visible:outline-offset-2
-    focus-visible:outline-[#f0d488];
+  @apply inline-flex min-h-12 items-center justify-center rounded-full border border-[#dcc283]
+    bg-gradient-to-b from-[#f1dbab] via-[#e2c982] to-[var(--gold)] px-6 py-2 text-sm font-semibold text-[#2f250f]
+    shadow-[0_8px_20px_rgba(0,0,0,0.36)] transition hover:-translate-y-0.5 hover:brightness-105
+    hover:shadow-[0_14px_28px_var(--shadow-gold)] active:translate-y-0 focus-visible:outline-2
+    focus-visible:outline-offset-2 focus-visible:outline-[#f0d488];
 }
 
 .btn-secondary {
-  @apply inline-flex min-h-11 items-center justify-center rounded-full border border-[var(--line)]
-    bg-[rgba(201,167,91,0.08)] px-5 py-2 text-sm font-bold text-[var(--ink)] transition hover:-translate-y-0.5
-    hover:bg-[rgba(201,167,91,0.14)] focus-visible:outline-2 focus-visible:outline-offset-2
+  @apply inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--line)]
+    bg-[rgba(201,167,91,0.10)] px-6 py-2 text-sm font-semibold text-[var(--ink)] transition
+    hover:-translate-y-0.5 hover:bg-[rgba(201,167,91,0.16)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.32)]
+    active:translate-y-0 focus-visible:outline-2 focus-visible:outline-offset-2
     focus-visible:outline-[#f0d488];
 }
 
 .eyebrow {
-  @apply mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold)];
+  @apply mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--gold-soft)];
 }
 
 .eyebrow::before {
   content: "";
-  width: 20px;
+  width: 24px;
   height: 1px;
-  background: var(--gold);
+  background: var(--gold-soft);
 }
 
 a:focus-visible,
@@ -67,4 +90,9 @@ input:focus-visible,
 textarea:focus-visible {
   outline: 2px solid #f0d488;
   outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(201, 167, 91, 0.28);
+  color: #fff9e9;
 }
