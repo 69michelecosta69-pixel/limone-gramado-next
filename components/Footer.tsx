@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { companyProfile } from "@/lib/company";
+import { companyProfile, whatsappLink } from "@/lib/company";
 
 export default function Footer() {
   return (
@@ -11,6 +11,15 @@ export default function Footer() {
         <p>
           <a href="https://instagram.com/limone_gramado" target="_blank" rel="noreferrer" className="text-[#e7d6a8]">
             Instagram
+          </a>
+          {" | "}
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noreferrer"
+            className="text-[#e7d6a8]"
+          >
+            WhatsApp
           </a>
           {" | "}
           <a href={`mailto:${companyProfile.email}`} className="text-[#e7d6a8] break-all">

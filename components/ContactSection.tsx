@@ -1,3 +1,5 @@
+import { whatsappLink } from "@/lib/company";
+
 export default function ContactSection() {
   return (
     <section id="contato" className="section-spacing">
@@ -12,6 +14,9 @@ export default function ContactSection() {
           <p className="mt-3 text-sm text-[#e5cf97]">Resposta em até 24 horas úteis.</p>
 
           <div className="mt-6 flex flex-wrap gap-3">
+            <a className="btn-primary" href={whatsappLink} target="_blank" rel="noreferrer">
+              Falar no WhatsApp
+            </a>
             <a className="btn-secondary" href="https://instagram.com/limone_gramado" target="_blank" rel="noreferrer">
               Ver Instagram
             </a>

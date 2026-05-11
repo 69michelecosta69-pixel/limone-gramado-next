@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { whatsappLink } from "@/lib/company";
 
 export default function EventsSection() {
   return (
@@ -16,13 +16,13 @@ export default function EventsSection() {
             <article className="surface-card p-6">
               <h3 className="mb-2 font-[var(--font-heading)] text-3xl">Degustações</h3>
               <p className="mb-5 text-[var(--muted)]">Sessões especiais de apresentação do limoncello em ambientes selecionados.</p>
-              <Link className="btn-primary" href="/contato">Solicitar informações</Link>
+              <a className="btn-primary" href={whatsappLink} target="_blank" rel="noreferrer">Solicitar informações</a>
             </article>
 
             <article className="surface-card p-6">
               <h3 className="mb-2 font-[var(--font-heading)] text-3xl">Eventos</h3>
               <p className="mb-5 text-[var(--muted)]">Experiência de serviço com carrinho Limone para celebrações e encontros especiais.</p>
-              <Link className="btn-secondary" href="/contato">Solicitar informações</Link>
+              <a className="btn-secondary" href={whatsappLink} target="_blank" rel="noreferrer">Solicitar informações</a>
             </article>
           </div>
         </div>
