@@ -22,6 +22,6 @@ const whatsappText =
 export const whatsappLink = `https://wa.me/${companyProfile.phoneE164Digits}?text=${encodeURIComponent(whatsappText)}`;
 
 const partnerWhatsappText =
-  "Olá! Quero receber uma proposta de parceria Limone Gramado para hotel/restaurante, carta de drinks, welcome drink ou eventos.";
+  "Olá! Tenho interesse em uma parceria com a Limone Gramado para meu hotel/restaurante. Gostaria de receber uma proposta para carta de drinks, welcome drink ou degustação.";
 
 export const partnerWhatsappLink = `https://wa.me/${companyProfile.phoneE164Digits}?text=${encodeURIComponent(partnerWhatsappText)}`;

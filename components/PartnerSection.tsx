@@ -220,7 +220,7 @@ export default function PartnerSection() {
             Quer adaptar uma receita ou experiência para o seu hotel, restaurante ou evento?
           </p>
           <a className="btn-primary md:min-w-[260px]" href={partnerWhatsappLink} target="_blank" rel="noreferrer">
-            Proposta de parceria
+            Quero uma proposta para meu estabelecimento
           </a>
         </div>
       </div>
