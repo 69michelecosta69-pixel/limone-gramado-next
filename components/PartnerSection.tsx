@@ -19,6 +19,36 @@ const benefits = [
   },
 ];
 
+const steps = [
+  "Entendemos o perfil do seu hotel, restaurante ou evento.",
+  "Sugerimos drinks, welcome drink, degustação ou ação especial.",
+  "Criamos uma proposta simples, personalizada e pronta para apresentar à equipe.",
+  "Alinhamos visita, serviço ou carta de drinks conforme a operação.",
+];
+
+const drinkIdeas = [
+  {
+    name: "Limone Spritz",
+    description: "Limoncello, espumante, água com gás e limão siciliano.",
+    fit: "Ideal para happy hour, terraço e recepção de hóspedes.",
+  },
+  {
+    name: "Serra Lemon",
+    description: "Limoncello, tônica, hortelã e gelo em copo alto.",
+    fit: "Refrescante para restaurante, piscina e eventos diurnos.",
+  },
+  {
+    name: "Welcome Limone",
+    description: "Dose gelada de limoncello servida em taça pequena.",
+    fit: "Perfeito como boas-vindas em hotéis, grupos e casamentos.",
+  },
+  {
+    name: "Gramado Sunset",
+    description: "Limoncello, cítricos, frutas amarelas e finalização aromática.",
+    fit: "Uma assinatura visual para carta de drinks e eventos exclusivos.",
+  },
+];
+
 export default function PartnerSection() {
   return (
     <section id="parcerias" className="section-spacing border-y border-[var(--line)] bg-[rgba(201,167,91,0.055)]">
@@ -45,9 +75,46 @@ export default function PartnerSection() {
           </div>
         </div>
 
+        <div className="mt-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="eyebrow">Como funciona</p>
+            <h3 className="mb-4 font-[var(--font-heading)] text-3xl font-semibold md:text-5xl">
+              Da ideia à experiência no seu espaço
+            </h3>
+            <ol className="grid gap-3">
+              {steps.map((step, index) => (
+                <li key={step} className="flex gap-4 border-b border-[var(--line)] pb-3 text-[var(--muted)] last:border-b-0">
+                  <span className="mt-1 inline-grid h-8 w-8 shrink-0 place-items-center rounded-full border border-[var(--line)] bg-[rgba(201,167,91,0.12)] text-sm font-semibold text-[#f6dfab]">
+                    {index + 1}
+                  </span>
+                  <span>{step}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+
+          <div>
+            <p className="eyebrow">Sugestões para carta</p>
+            <h3 className="mb-4 font-[var(--font-heading)] text-3xl font-semibold md:text-5xl">
+              Drinks prontos para inspirar a parceria
+            </h3>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {drinkIdeas.map((drink) => (
+                <article key={drink.name} className="surface-card p-5">
+                  <h4 className="mb-2 font-[var(--font-heading)] text-2xl font-semibold text-[#f6dfab]">{drink.name}</h4>
+                  <p className="text-sm text-[var(--ink)]">{drink.description}</p>
+                  <p className="mt-3 border-t border-[var(--line)] pt-3 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--muted)]">
+                    {drink.fit}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+
         <div className="mt-8 flex flex-col gap-4 border-t border-[var(--line)] pt-6 md:flex-row md:items-center md:justify-between">
           <p className="max-w-2xl text-sm font-semibold uppercase tracking-[0.16em] text-[#f0ddb1]">
-            Solicite uma proposta de parceria para o seu hotel, restaurante ou evento.
+            Quer adaptar uma receita ou experiência para o seu hotel, restaurante ou evento?
           </p>
           <a className="btn-primary md:min-w-[260px]" href={partnerWhatsappLink} target="_blank" rel="noreferrer">
             Proposta de parceria
