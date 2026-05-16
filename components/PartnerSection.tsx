@@ -30,23 +30,28 @@ const steps = [
 const drinkIdeas = [
   {
     name: "Limone Spritz",
-    description: "Limoncello, espumante, água com gás e limão siciliano.",
+    description: "Limoncello, espumante, água com gás, gelo e limão siciliano.",
     fit: "Ideal para happy hour, terraço e recepção de hóspedes.",
   },
   {
     name: "Serra Lemon",
-    description: "Limoncello, tônica, hortelã e gelo em copo alto.",
+    description: "Limoncello, água tônica, hortelã fresca, gelo e rodelas de limão.",
     fit: "Refrescante para restaurante, piscina e eventos diurnos.",
   },
   {
-    name: "Welcome Limone",
-    description: "Dose gelada de limoncello servida em taça pequena.",
-    fit: "Perfeito como boas-vindas em hotéis, grupos e casamentos.",
+    name: "Gramado Sunset",
+    description: "Limoncello, suco cítrico, frutas amarelas, gelo e toque aromático.",
+    fit: "Uma assinatura visual para carta de drinks e eventos exclusivos.",
   },
   {
-    name: "Gramado Sunset",
-    description: "Limoncello, cítricos, frutas amarelas e finalização aromática.",
-    fit: "Uma assinatura visual para carta de drinks e eventos exclusivos.",
+    name: "Italiano Gramado",
+    description: "Limoncello, base cítrica equilibrada e twist de limão em taça coupe.",
+    fit: "Clássico e elegante para jantar, menu harmonizado e bar de hotel.",
+  },
+  {
+    name: "Drink da Casa",
+    description: "Limoncello, textura cremosa, gelo grande e finalização com casca de limão.",
+    fit: "Receita exclusiva para criar uma assinatura própria do estabelecimento.",
   },
 ];
 
@@ -196,7 +201,7 @@ export default function PartnerSection() {
                 />
               </figure>
             </div>
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
               {drinkIdeas.map((drink) => (
                 <article key={drink.name} className="surface-card p-5">
                   <h4 className="mb-2 font-[var(--font-heading)] text-2xl font-semibold text-[#f6dfab]">{drink.name}</h4>
