@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { whatsappLink } from "@/lib/company";
+import { partnerWhatsappLink, whatsappLink } from "@/lib/company";
 
 export default function Hero() {
   return (
@@ -14,16 +14,16 @@ export default function Hero() {
             Inspirado na Itália e feito na Serra Gaúcha com limões selecionados em pequenos lotes.
           </p>
           <p className="mt-4 max-w-2xl text-[var(--muted)]">
-            Produzido com cuidado e tradição, o Limone Gramado nasce para acompanhar encontros, celebrações e
-            experiências únicas em Gramado.
+            Criado para experiências em Gramado: carta de drinks, welcome drink, eventos especiais e parcerias com
+            hotéis e restaurantes.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <a className="btn-primary" href="#eventos">
-              Degustações em breve
+            <a className="btn-primary" href="#parcerias">
+              Parcerias para hotéis
             </a>
-            <a className="btn-secondary" href="#contato">
-              Entrar na lista de espera
+            <a className="btn-secondary" href={partnerWhatsappLink} target="_blank" rel="noreferrer">
+              Solicitar proposta
             </a>
           </div>
 

@@ -23,7 +23,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  keywords: ["limoncello gramado", "licor de limao gramado", "limone gramado", "limoncello artesanal", "gramado"],
+  keywords: [
+    "limoncello gramado",
+    "licor de limao gramado",
+    "limone gramado",
+    "limoncello artesanal",
+    "hotel gramado",
+    "restaurante gramado",
+    "carta de drinks",
+    "welcome drink",
+    "eventos em gramado",
+  ],
   robots: {
     index: true,
     follow: true,

@@ -20,3 +20,8 @@ const whatsappText =
   "Olá! Quero saber mais sobre o Limoncello Limone Gramado e disponibilidade para compra/degustação em Gramado.";
 
 export const whatsappLink = `https://wa.me/${companyProfile.phoneE164Digits}?text=${encodeURIComponent(whatsappText)}`;
+
+const partnerWhatsappText =
+  "Olá! Quero receber uma proposta de parceria Limone Gramado para hotel/restaurante, carta de drinks, welcome drink ou eventos.";
+
+export const partnerWhatsappLink = `https://wa.me/${companyProfile.phoneE164Digits}?text=${encodeURIComponent(partnerWhatsappText)}`;
