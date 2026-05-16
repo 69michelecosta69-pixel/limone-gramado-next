@@ -87,6 +87,30 @@ export default function PartnerSection() {
           />
         </figure>
 
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          <figure className="surface-card overflow-hidden p-2">
+            <Image
+              src="/assets/parcerias-degustacao-evento.png"
+              alt="Degustação de limoncello para eventos e experiências gastronômicas"
+              width={1024}
+              height={1536}
+              sizes="(max-width: 768px) 92vw, (max-width: 1280px) 46vw, 540px"
+              className="h-[340px] w-full rounded-xl bg-[#0f1628] object-cover object-[center_58%] sm:h-[420px] md:h-[500px]"
+            />
+          </figure>
+
+          <div className="flex flex-col justify-center border-y border-[var(--line)] py-8 md:py-10">
+            <p className="eyebrow">Eventos e degustações</p>
+            <h3 className="mb-4 font-[var(--font-heading)] text-3xl font-semibold md:text-5xl">
+              Um ritual de prova para encantar convidados
+            </h3>
+            <p className="text-[var(--muted)]">
+              Para lançamentos, jantares especiais, casamentos e ações de relacionamento, o Limone pode entrar como
+              degustação guiada, finalização de menu ou experiência exclusiva para convidados.
+            </p>
+          </div>
+        </div>
+
         <div className="mt-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="eyebrow">Como funciona</p>
