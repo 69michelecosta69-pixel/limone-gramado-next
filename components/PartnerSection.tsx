@@ -76,6 +76,17 @@ export default function PartnerSection() {
           </div>
         </div>
 
+        <figure className="surface-card mt-10 overflow-hidden p-2">
+          <Image
+            src="/assets/parcerias-welcome-drink.png"
+            alt="Welcome drink com limoncello para recepção em hotéis"
+            width={1024}
+            height={1536}
+            sizes="(max-width: 768px) 92vw, 1120px"
+            className="h-[360px] w-full rounded-xl bg-[#0f1628] object-cover object-[center_62%] sm:h-[440px] md:h-[520px]"
+          />
+        </figure>
+
         <div className="mt-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="eyebrow">Como funciona</p>
