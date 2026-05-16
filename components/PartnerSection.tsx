@@ -120,6 +120,16 @@ export default function PartnerSection() {
             <h3 className="mb-4 font-[var(--font-heading)] text-3xl font-semibold md:text-5xl">
               Drinks prontos para inspirar a parceria
             </h3>
+            <figure className="surface-card mb-5 overflow-hidden p-2">
+              <Image
+                src="/assets/parcerias-limone-spritz.png"
+                alt="Limone Spritz em mesa de restaurante"
+                width={1024}
+                height={1536}
+                sizes="(max-width: 768px) 92vw, (max-width: 1280px) 48vw, 620px"
+                className="h-[320px] w-full rounded-xl bg-[#0f1628] object-cover object-[center_48%] sm:h-[400px] md:h-[460px]"
+              />
+            </figure>
             <div className="grid gap-3 sm:grid-cols-2">
               {drinkIdeas.map((drink) => (
                 <article key={drink.name} className="surface-card p-5">
