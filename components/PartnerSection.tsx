@@ -256,9 +256,14 @@ export default function PartnerSection() {
           <p className="max-w-2xl text-sm font-semibold uppercase tracking-[0.16em] text-[#f0ddb1]">
             Quer adaptar uma receita ou experiência para o seu hotel, restaurante ou evento?
           </p>
-          <a className="btn-primary md:min-w-[260px]" href={partnerWhatsappLink} target="_blank" rel="noreferrer">
-            Quero uma proposta para meu estabelecimento
-          </a>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <a className="btn-secondary" href="/assets/proposta-parcerias-limone-gramado.pdf" target="_blank" rel="noreferrer">
+              Ver apresentação em PDF
+            </a>
+            <a className="btn-primary md:min-w-[260px]" href={partnerWhatsappLink} target="_blank" rel="noreferrer">
+              Quero uma proposta para meu estabelecimento
+            </a>
+          </div>
         </div>
       </div>
     </section>
