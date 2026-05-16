@@ -144,15 +144,15 @@ export default function PartnerSection() {
             <h3 className="mb-4 font-[var(--font-heading)] text-3xl font-semibold md:text-5xl">
               Drinks prontos para inspirar a parceria
             </h3>
-            <div className="mb-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mb-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
               <figure className="surface-card overflow-hidden p-2">
                 <Image
                   src="/assets/parcerias-limone-spritz.png"
                   alt="Limone Spritz em mesa de restaurante"
                   width={1024}
                   height={1536}
-                  sizes="(max-width: 768px) 92vw, (max-width: 1280px) 24vw, 150px"
-                  className="h-[320px] w-full rounded-xl bg-[#0f1628] object-cover object-[center_48%] sm:h-[340px]"
+                  sizes="(max-width: 768px) 92vw, (max-width: 1280px) 24vw, 130px"
+                  className="h-[320px] w-full rounded-xl bg-[#0f1628] object-cover object-[center_48%] sm:h-[320px]"
                 />
               </figure>
               <figure className="surface-card overflow-hidden p-2">
@@ -161,8 +161,8 @@ export default function PartnerSection() {
                   alt="Serra Lemon com limão e hortelã para carta de drinks"
                   width={1024}
                   height={1536}
-                  sizes="(max-width: 768px) 92vw, (max-width: 1280px) 24vw, 150px"
-                  className="h-[320px] w-full rounded-xl bg-[#0f1628] object-cover object-[center_50%] sm:h-[340px]"
+                  sizes="(max-width: 768px) 92vw, (max-width: 1280px) 24vw, 130px"
+                  className="h-[320px] w-full rounded-xl bg-[#0f1628] object-cover object-[center_50%] sm:h-[320px]"
                 />
               </figure>
               <figure className="surface-card overflow-hidden p-2">
@@ -171,8 +171,8 @@ export default function PartnerSection() {
                   alt="Gramado Sunset com tons cítricos para carta de drinks"
                   width={1024}
                   height={1536}
-                  sizes="(max-width: 768px) 92vw, (max-width: 1280px) 24vw, 150px"
-                  className="h-[320px] w-full rounded-xl bg-[#0f1628] object-cover object-[center_50%] sm:h-[340px]"
+                  sizes="(max-width: 768px) 92vw, (max-width: 1280px) 24vw, 130px"
+                  className="h-[320px] w-full rounded-xl bg-[#0f1628] object-cover object-[center_50%] sm:h-[320px]"
                 />
               </figure>
               <figure className="surface-card overflow-hidden p-2">
@@ -181,8 +181,18 @@ export default function PartnerSection() {
                   alt="Italiano Gramado em taça coupe para restaurante"
                   width={1024}
                   height={1536}
-                  sizes="(max-width: 768px) 92vw, (max-width: 1280px) 24vw, 150px"
-                  className="h-[320px] w-full rounded-xl bg-[#0f1628] object-cover object-[center_48%] sm:h-[340px]"
+                  sizes="(max-width: 768px) 92vw, (max-width: 1280px) 24vw, 130px"
+                  className="h-[320px] w-full rounded-xl bg-[#0f1628] object-cover object-[center_48%] sm:h-[320px]"
+                />
+              </figure>
+              <figure className="surface-card overflow-hidden p-2">
+                <Image
+                  src="/assets/parcerias-drink-da-casa.png"
+                  alt="Drink da Casa em copo baixo com limoncello"
+                  width={1024}
+                  height={1536}
+                  sizes="(max-width: 768px) 92vw, (max-width: 1280px) 24vw, 130px"
+                  className="h-[320px] w-full rounded-xl bg-[#0f1628] object-cover object-[center_50%] sm:h-[320px]"
                 />
               </figure>
             </div>
