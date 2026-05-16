@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { partnerWhatsappLink } from "@/lib/company";
 
 const benefits = [
@@ -91,6 +92,16 @@ export default function PartnerSection() {
                 </li>
               ))}
             </ol>
+            <figure className="surface-card mt-6 overflow-hidden p-2">
+              <Image
+                src="/assets/parcerias-drinks.png"
+                alt="Drinks com limoncello para carta de hotéis e restaurantes"
+                width={1024}
+                height={1536}
+                sizes="(max-width: 768px) 92vw, (max-width: 1280px) 44vw, 520px"
+                className="h-[360px] w-full rounded-xl bg-[#0f1628] object-cover sm:h-[440px] md:h-[520px]"
+              />
+            </figure>
           </div>
 
           <div>
