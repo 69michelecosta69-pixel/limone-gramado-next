@@ -55,6 +55,25 @@ const drinkIdeas = [
   },
 ];
 
+const partnershipOptions = [
+  {
+    title: "Hotelaria",
+    text: "Welcome drink, mimo para hóspedes, experiências para grupos e ações especiais na recepção.",
+  },
+  {
+    title: "Restaurantes",
+    text: "Carta de drinks, sugestão de digestivo, harmonização de sobremesas e assinatura da casa.",
+  },
+  {
+    title: "Eventos",
+    text: "Degustações, serviço especial, ativações de marca e momentos exclusivos para convidados.",
+  },
+  {
+    title: "Presentes corporativos",
+    text: "Opções para relacionamento, celebrações, kits especiais e lembranças premium de Gramado.",
+  },
+];
+
 export default function PartnerSection() {
   return (
     <section id="parcerias" className="section-spacing border-y border-[var(--line)] bg-[rgba(201,167,91,0.055)]">
@@ -212,6 +231,24 @@ export default function PartnerSection() {
                 </article>
               ))}
             </div>
+          </div>
+        </div>
+
+        <div className="mt-10 border-y border-[var(--line)] py-8">
+          <div className="mb-6 max-w-3xl">
+            <p className="eyebrow">Opções de parceria</p>
+            <h3 className="font-[var(--font-heading)] text-3xl font-semibold md:text-5xl">
+              Uma proposta para cada tipo de operação
+            </h3>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {partnershipOptions.map((option) => (
+              <article key={option.title} className="surface-card p-5">
+                <h4 className="mb-2 font-[var(--font-heading)] text-2xl font-semibold text-[#f6dfab]">{option.title}</h4>
+                <p className="text-sm text-[var(--muted)]">{option.text}</p>
+              </article>
+            ))}
           </div>
         </div>
 
