@@ -18,7 +18,7 @@ const structuredData = [
     "@type": "Organization",
     name: companyProfile.brandName,
     url: siteUrl,
-    logo: `${siteUrl}/assets/hero-limoncello-wm.jpg`,
+    logo: `${siteUrl}/assets/limone-logo-monogram.png`,
     sameAs: ["https://instagram.com/limone_gramado"],
   },
 

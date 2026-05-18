@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -20,11 +21,25 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[rgba(7,13,27,0.88)] backdrop-blur-md">
       <div className="container-limone flex min-h-[74px] items-center justify-between gap-4">
-        <a href="#inicio" className="inline-flex items-center gap-2" aria-label="Limone Gramado, voltar ao topo">
-          <span className="inline-grid h-10 w-10 place-items-center rounded-full border border-[var(--line)] bg-[radial-gradient(circle_at_30%_30%,#1a2e5a,#0e1b39)] font-[var(--font-heading)] text-xl text-[#e6cb8e]">
-            L
+        <a href="#inicio" className="inline-flex items-center gap-3" aria-label="Limone Gramado, voltar ao topo">
+          <span className="relative h-12 w-12 overflow-hidden rounded-full border border-[rgba(236,215,165,0.38)] bg-black shadow-[0_0_18px_rgba(201,167,91,0.20)]">
+            <Image
+              src="/assets/limone-logo-monogram.png"
+              alt=""
+              fill
+              sizes="48px"
+              className="object-cover"
+              priority
+            />
           </span>
-          <span className="font-[var(--font-heading)] text-[1.9rem] tracking-tight text-[#f2e7cc]">Limone Gramado</span>
+          <span className="grid leading-none">
+            <span className="font-[var(--font-heading)] text-[1.7rem] uppercase tracking-[0.16em] text-[#f2d68a]">
+              Limone
+            </span>
+            <span className="text-[0.72rem] font-semibold uppercase tracking-[0.34em] text-[#d8c08b]">
+              Gramado
+            </span>
+          </span>
         </a>
 
         <button

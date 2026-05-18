@@ -20,6 +20,20 @@ export const metadata: Metadata = {
   title: seoTitle,
   description: seoDescription,
   applicationName: "Limone Gramado",
+  icons: {
+    icon: [
+      {
+        url: "/assets/limone-logo-monogram.png",
+        type: "image/png",
+      },
+    ],
+    apple: [
+      {
+        url: "/assets/limone-logo-monogram.png",
+        type: "image/png",
+      },
+    ],
+  },
   alternates: {
     canonical: "/",
   },
