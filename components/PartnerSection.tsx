@@ -235,11 +235,27 @@ export default function PartnerSection() {
         </div>
 
         <div className="mt-10 border-y border-[var(--line)] py-8">
-          <div className="mb-6 max-w-3xl">
-            <p className="eyebrow">Opções de parceria</p>
-            <h3 className="font-[var(--font-heading)] text-3xl font-semibold md:text-5xl">
-              Uma proposta para cada tipo de operação
-            </h3>
+          <div className="mb-6 grid gap-5 md:grid-cols-[1fr_auto] md:items-end">
+            <div className="max-w-3xl">
+              <p className="eyebrow">Opções de parceria</p>
+              <h3 className="font-[var(--font-heading)] text-3xl font-semibold md:text-5xl">
+                Uma proposta para cada tipo de operação
+              </h3>
+            </div>
+            <div className="inline-flex items-center gap-3 rounded-xl border border-[var(--line)] bg-[rgba(201,167,91,0.08)] p-3">
+              <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border border-[rgba(236,215,165,0.38)] bg-black">
+                <Image
+                  src="/assets/limone-logo-monogram.png"
+                  alt=""
+                  fill
+                  sizes="56px"
+                  className="object-cover"
+                />
+              </span>
+              <span className="max-w-[190px] text-xs font-semibold uppercase leading-relaxed tracking-[0.14em] text-[#f0ddb1]">
+                Experiências com assinatura Limone Gramado
+              </span>
+            </div>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

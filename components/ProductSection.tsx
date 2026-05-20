@@ -31,6 +31,20 @@ export default function ProductSection() {
             <li className="flex items-center gap-3"><span className="h-2 w-2 rounded-full bg-[#e3d188]" />Limões selecionados</li>
             <li className="flex items-center gap-3"><span className="h-2 w-2 rounded-full bg-[#e3d188]" />Pequenos lotes artesanais</li>
           </ul>
+          <div className="mt-7 flex items-center gap-4 border-y border-[var(--line)] py-4">
+            <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border border-[rgba(236,215,165,0.38)] bg-black">
+              <Image
+                src="/assets/limone-logo-monogram.png"
+                alt=""
+                fill
+                sizes="56px"
+                className="object-cover"
+              />
+            </span>
+            <p className="text-sm font-semibold uppercase tracking-[0.12em] text-[#f0ddb1]">
+              Assinatura artesanal de Gramado para momentos especiais
+            </p>
+          </div>
         </div>
       </div>
     </section>
