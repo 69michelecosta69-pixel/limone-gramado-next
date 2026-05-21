@@ -60,13 +60,13 @@ export default function Hero() {
         </div>
 
         <figure className="surface-card relative w-full overflow-hidden p-2 md:justify-self-end md:max-w-[860px]">
-          <div className="absolute left-5 top-5 z-10 grid place-items-center rounded-full border border-[rgba(236,215,165,0.48)] bg-black/86 p-2.5 shadow-[0_20px_42px_rgba(0,0,0,0.42)] backdrop-blur-sm sm:left-6 sm:top-6">
-            <span className="relative h-24 w-24 overflow-hidden rounded-full sm:h-32 sm:w-32">
+          <div className="absolute left-5 top-5 z-10 grid place-items-center rounded-full border border-[rgba(236,215,165,0.42)] bg-black/82 p-2 shadow-[0_18px_36px_rgba(0,0,0,0.38)] backdrop-blur-sm">
+            <span className="relative h-20 w-20 overflow-hidden rounded-full sm:h-24 sm:w-24">
               <Image
                 src="/assets/limone-logo-monogram.png"
                 alt=""
                 fill
-                sizes="(max-width: 640px) 96px, 128px"
+                sizes="(max-width: 640px) 80px, 96px"
                 className="object-cover"
               />
             </span>

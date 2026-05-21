@@ -20,23 +20,23 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[rgba(7,13,27,0.88)] backdrop-blur-md">
-      <div className="container-limone flex min-h-[74px] items-center justify-between gap-4">
-        <a href="#inicio" className="inline-flex items-center gap-3" aria-label="Limone Gramado, voltar ao topo">
-          <span className="relative h-12 w-12 overflow-hidden rounded-full border border-[rgba(236,215,165,0.38)] bg-black shadow-[0_0_18px_rgba(201,167,91,0.20)]">
+      <div className="container-limone flex min-h-[88px] items-center justify-between gap-4">
+        <a href="#inicio" className="inline-flex items-center gap-4" aria-label="Limone Gramado, voltar ao topo">
+          <span className="relative h-16 w-16 overflow-hidden rounded-full border border-[rgba(236,215,165,0.48)] bg-black shadow-[0_0_24px_rgba(201,167,91,0.26)]">
             <Image
               src="/assets/limone-logo-monogram.png"
               alt=""
               fill
-              sizes="48px"
+              sizes="64px"
               className="object-cover"
               priority
             />
           </span>
           <span className="grid leading-none">
-            <span className="font-[var(--font-heading)] text-[1.7rem] uppercase tracking-[0.16em] text-[#f2d68a]">
+            <span className="font-[var(--font-heading)] text-[2.1rem] uppercase tracking-[0.16em] text-[#f2d68a]">
               Limone
             </span>
-            <span className="text-[0.72rem] font-semibold uppercase tracking-[0.34em] text-[#d8c08b]">
+            <span className="text-[0.82rem] font-semibold uppercase tracking-[0.34em] text-[#d8c08b]">
               Gramado
             </span>
           </span>
