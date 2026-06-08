@@ -2,6 +2,7 @@ import ContactSection from "@/components/ContactSection";
 import EventsSection from "@/components/EventsSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
+import FounderVideoSection from "@/components/FounderVideoSection";
 import Hero from "@/components/Hero";
 import HowToServeSection from "@/components/HowToServeSection";
 import Navbar from "@/components/Navbar";
@@ -49,6 +50,7 @@ export default function HomePage() {
       <main className="pb-24 md:pb-0">
         <Hero />
         <ProductSection />
+        <FounderVideoSection />
         <PartnerSection />
         <StorySection />
         <EventsSection />
