@@ -297,10 +297,15 @@ function startAutoRefresh() {
   autoRefreshTimer = setInterval(async () => {
     if (!session || document.hidden) return;
     await loadFromServer();
-    if (session && !document.activeElement?.closest("form")) {
+    if (session && !isEditing()) {
       render();
     }
   }, AUTO_REFRESH_MS);
+}
+
+function isEditing() {
+  const active = document.activeElement;
+  return Boolean(active?.matches("input, select, textarea") || active?.closest("form"));
 }
 
 function stopAutoRefresh() {
@@ -427,7 +432,7 @@ function dashboardValue(key, fallback) {
 
 function renderDashboardEditor(calculated) {
   if (!state.dashboard) state.dashboard = structuredClone(initialData.dashboard);
-  const section = element("section", "form-card", `
+  const section = element("form", "form-card", `
     <h2>Editar início</h2>
     <div class="form-grid">
       <div class="field">
@@ -448,12 +453,13 @@ function renderDashboardEditor(calculated) {
       </div>
     </div>
     <div class="actions">
-      <button class="button" type="button" id="save-dashboard">Salvar início</button>
+      <button class="button" type="submit" id="save-dashboard">Salvar início</button>
       <button class="button secondary" type="button" id="reset-dashboard">Automático</button>
     </div>
     <p class="meta">Campos vazios usam o cálculo automático dos registros.</p>
   `);
-  section.querySelector("#save-dashboard").addEventListener("click", () => {
+  section.addEventListener("submit", (event) => {
+    event.preventDefault();
     state.dashboard = {
       bottles: section.querySelector("#dashboard-bottles").value,
       sales: section.querySelector("#dashboard-sales").value,

@@ -1,4 +1,4 @@
-const CACHE_NAME = "limone-gramado-v3-online";
+const CACHE_NAME = "limone-gramado-v4-dashboard-edit";
 const ASSETS = [
   "./",
   "./index.html",
