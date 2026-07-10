@@ -1,10 +1,11 @@
-const CACHE_NAME = "limone-gramado-v4-dashboard-edit";
+const CACHE_NAME = "limone-gramado-v5-iphone-ready";
 const ASSETS = [
   "./",
   "./index.html",
   "./app.css",
   "./app.js",
   "./manifest.json",
+  "./apple-touch-icon.png",
   "./icons/icon-192.svg",
   "./icons/icon-512.svg"
 ];
