@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192" role="img" aria-label="LIMONE GRAMADO">
+  <rect width="192" height="192" rx="42" fill="#2f6b4f"/>
+  <circle cx="97" cy="90" r="45" fill="#f2c84b"/>
+  <path d="M53 102c25 18 62 24 91-7-10 39-50 58-85 36-9-6-11-19-6-29z" fill="#fff6c8"/>
+  <path d="M106 46c17-13 36-12 50 2-18 9-33 12-50-2z" fill="#85b66b"/>
+  <text x="96" y="157" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#fffaf1">LG</text>
+</svg>
