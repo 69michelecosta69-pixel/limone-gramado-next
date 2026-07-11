@@ -1,4 +1,4 @@
-const CACHE_NAME = "limone-gramado-v5-iphone-ready";
+const CACHE_NAME = "limone-gramado-v6-cors-fix";
 const ASSETS = [
   "./",
   "./index.html",

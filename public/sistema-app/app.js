@@ -249,7 +249,7 @@ async function loginWithPin(user, pin) {
 
 function friendlyNetworkError(error) {
   if (String(error.message || "").includes("Failed to fetch")) {
-    return "Não conectou ao servidor. Verifique Wi-Fi e servidor LIMONE.";
+    return "Não conectou ao servidor online. Verifique internet e tente novamente.";
   }
   return error.message || "Erro de conexão";
 }
