@@ -18,14 +18,6 @@ export const companyProfile = {
 
 export const salesLocations = [
   {
-    name: "Fornos da Várzea Grande",
-    shortAddress: "RS-115, 112 · Várzea Grande · Gramado/RS",
-    fullAddress: "RS-115, 112 · Várzea Grande · Gramado/RS · CEP 95670-000",
-    availability: "LIMONE GRAMADO disponível para compra e degustação mediante consulta.",
-    mapUrl:
-      "https://www.google.com/maps/search/?api=1&query=Fornos+da+V%C3%A1rzea+Grande%2C+RS-115%2C+112%2C+V%C3%A1rzea+Grande%2C+Gramado%2C+RS%2C+95670-000",
-  },
-  {
     name: "Adega Salvador",
     shortAddress: "Rodovia ERS-115, 36316, Loja 1 · Várzea Grande · Gramado/RS",
     fullAddress: "Rodovia ERS-115, 36316 · Loja 1 · Várzea Grande · Gramado/RS · CEP 95677-276",
@@ -36,6 +28,20 @@ export const salesLocations = [
 ] as const;
 
 export const salesLocationNames = salesLocations.map((location) => location.name).join(" e ");
+
+export const tastingLocations = [
+  {
+    name: "Fornos da Várzea Grande",
+    shortAddress: "RS-115, 112 · Várzea Grande · Gramado/RS",
+    fullAddress: "RS-115, 112 · Várzea Grande · Gramado/RS · CEP 95670-000",
+    availability:
+      "Degustações e vendas em datas selecionadas, com atendimento da equipe LIMONE GRAMADO. Confirme previamente pelo WhatsApp.",
+    mapUrl:
+      "https://www.google.com/maps/search/?api=1&query=Fornos+da+V%C3%A1rzea+Grande%2C+RS-115%2C+112%2C+V%C3%A1rzea+Grande%2C+Gramado%2C+RS%2C+95670-000",
+  },
+] as const;
+
+export const tastingLocationNames = tastingLocations.map((location) => location.name).join(" e ");
 
 const whatsappText =
   "Olá! Quero saber mais sobre o Limoncello Limone Gramado e disponibilidade para compra/degustação em Gramado.";

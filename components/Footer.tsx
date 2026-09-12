@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { companyProfile, salesLocations, whatsappLink } from "@/lib/company";
+import { companyProfile, salesLocations, tastingLocations, whatsappLink } from "@/lib/company";
 
 export default function Footer() {
   return (
@@ -33,6 +33,10 @@ export default function Footer() {
               </a>
             ))}
           </div>
+          <p>
+            Degustações agendadas: {tastingLocations.map((location) => location.name).join(" e ")} · confirme pelo
+            WhatsApp
+          </p>
           <p>
             <a href="https://instagram.com/limone_gramado" target="_blank" rel="noreferrer" className="text-[#e7d6a8]">
               Instagram

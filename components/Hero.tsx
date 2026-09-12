@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { partnerWhatsappLink, salesLocationNames, whatsappLink } from "@/lib/company";
+import { partnerWhatsappLink, salesLocationNames, tastingLocationNames, whatsappLink } from "@/lib/company";
 
 export default function Hero() {
   return (
@@ -48,7 +48,8 @@ export default function Hero() {
           </div>
 
           <p className="mt-4 text-xs text-[var(--muted)]">
-            Disponível em {salesLocationNames}, em Gramado/RS.
+            Onde comprar: {salesLocationNames}. Degustações com a equipe LIMONE em {tastingLocationNames}, mediante
+            confirmação.
           </p>
 
           <div className="mt-5 flex flex-wrap gap-3">

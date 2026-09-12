@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { salesLocations } from "@/lib/company";
+import { salesLocations, tastingLocations } from "@/lib/company";
 
 export default function WhereToFindSection() {
   return (
@@ -11,11 +11,31 @@ export default function WhereToFindSection() {
             Encontre o LIMONE GRAMADO
           </h2>
           <p className="mb-6 max-w-3xl text-[var(--muted)]">
-            Compre o seu LIMONE GRAMADO nos nossos pontos parceiros em Várzea Grande, Gramado/RS.
+            Compre na Adega Salvador ou participe das degustações e vendas realizadas pela equipe LIMONE GRAMADO nos
+            Fornos da Várzea Grande.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             {salesLocations.map((location) => (
               <article key={location.name} className="surface-card flex min-h-[220px] flex-col p-6">
+                <p className="eyebrow">Ponto fixo de venda</p>
+                <h3 className="mb-2 break-words font-[var(--font-heading)] text-2xl leading-tight lg:text-3xl">
+                  {location.name}
+                </h3>
+                <p className="text-sm leading-relaxed text-[var(--muted)]">{location.fullAddress}</p>
+                <p className="mt-3 text-sm text-[var(--muted)]">{location.availability}</p>
+                <a
+                  className="mt-auto pt-4 text-sm font-semibold text-[var(--gold)] underline decoration-[var(--gold)]/40 underline-offset-4 transition hover:decoration-[var(--gold)]"
+                  href={location.mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Abrir no mapa
+                </a>
+              </article>
+            ))}
+            {tastingLocations.map((location) => (
+              <article key={location.name} className="surface-card flex min-h-[220px] flex-col p-6">
+                <p className="eyebrow">Degustações agendadas</p>
                 <h3 className="mb-2 break-words font-[var(--font-heading)] text-2xl leading-tight lg:text-3xl">
                   {location.name}
                 </h3>

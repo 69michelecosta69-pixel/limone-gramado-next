@@ -1,4 +1,4 @@
-import { salesLocations } from "@/lib/company";
+import { salesLocations, tastingLocations } from "@/lib/company";
 
 export default function SalesLocationsCompact() {
   return (
@@ -19,6 +19,14 @@ export default function SalesLocationsCompact() {
             >
               Abrir no mapa
             </a>
+          </article>
+        ))}
+        {tastingLocations.map((location) => (
+          <article key={location.name} className="rounded-xl border border-[var(--line)] bg-[rgba(201,167,91,0.06)] p-4">
+            <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--gold)]">Degustações agendadas</p>
+            <h2 className="mt-1 font-[var(--font-heading)] text-2xl font-semibold text-[var(--ink)]">{location.name}</h2>
+            <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">{location.shortAddress}</p>
+            <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">Confirme previamente pelo WhatsApp.</p>
           </article>
         ))}
       </div>

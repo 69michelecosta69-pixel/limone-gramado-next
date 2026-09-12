@@ -1,6 +1,10 @@
-import { salesLocationNames, salesLocations } from "@/lib/company";
+import { salesLocationNames, salesLocations, tastingLocationNames, tastingLocations } from "@/lib/company";
 
 const salesLocationAddresses = salesLocations
+  .map((location) => `${location.name}: ${location.shortAddress}`)
+  .join("; ");
+
+const tastingLocationAddresses = tastingLocations
   .map((location) => `${location.name}: ${location.shortAddress}`)
   .join("; ");
 
@@ -15,7 +19,7 @@ const faqs = [
   },
   {
     question: "Já está à venda?",
-    answer: `Sim. O Limone Gramado está disponível em ${salesLocationNames}, em Gramado/RS.`,
+    answer: `Sim. Compra em ${salesLocationNames}. Degustações e vendas com a equipe LIMONE em ${tastingLocationNames}, em datas confirmadas previamente.`,
   },
   {
     question: "Posso contratar para eventos?",
@@ -23,7 +27,7 @@ const faqs = [
   },
   {
     question: "Onde encontrar?",
-    answer: `${salesLocationAddresses}. Consulte o horário atualizado antes da visita.`,
+    answer: `Onde comprar: ${salesLocationAddresses}. Degustações agendadas: ${tastingLocationAddresses}. Confirme previamente pelo WhatsApp.`,
   },
 ];
 
