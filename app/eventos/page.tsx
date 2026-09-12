@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SalesLocationsCompact from "@/components/SalesLocationsCompact";
 import { siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Limoncello para Eventos em Gramado | Limone Gramado",
   description:
-    "Carrinho de limoncello, degustações e ativações da Limone Gramado para eventos, hotéis, restaurantes e experiências em Gramado e Canela.",
+    "Degustações e apresentações da Limone Gramado para eventos, hotéis, restaurantes e experiências em Gramado e Canela.",
   alternates: {
     canonical: "/eventos",
   },
@@ -18,14 +19,14 @@ export default function EventosPage() {
         <p className="eyebrow">Eventos</p>
         <h1 className="mb-4 font-[var(--font-heading)] text-4xl md:text-6xl">Eventos e degustações</h1>
         <p className="text-[var(--muted)]">
-          Ativações especiais com carrinho da marca, degustações guiadas e experiências para hotéis, restaurantes e
-          turismo em Gramado.
+          Degustações, apresentações da marca e experiências para hotéis, restaurantes, eventos e turismo em Gramado.
         </p>
         <div className="mt-6">
           <Link href={`${siteUrl}/#eventos`} className="btn-secondary">
             Ver seção de eventos
           </Link>
         </div>
+        <SalesLocationsCompact />
       </section>
     </main>
   );

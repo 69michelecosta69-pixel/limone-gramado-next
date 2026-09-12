@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import SalesLocationsCompact from "@/components/SalesLocationsCompact";
 import { siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -82,6 +83,7 @@ export default function HistoriaPage() {
             Voltar para a página inicial
           </Link>
         </div>
+        <SalesLocationsCompact />
       </section>
     </main>
   );

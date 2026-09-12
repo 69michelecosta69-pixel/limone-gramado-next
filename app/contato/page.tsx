@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SalesLocationsCompact from "@/components/SalesLocationsCompact";
 import { whatsappLink } from "@/lib/company";
 import { siteUrl } from "@/lib/seo";
 
@@ -51,6 +52,7 @@ export default async function ContatoPage({ searchParams }: ContatoPageProps) {
             Abrir formulário
           </Link>
         </div>
+        <SalesLocationsCompact />
       </section>
     </main>
   );

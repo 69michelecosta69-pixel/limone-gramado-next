@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SalesLocationsCompact from "@/components/SalesLocationsCompact";
 import { siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function SobrePage() {
             Ver história completa
           </Link>
         </div>
+        <SalesLocationsCompact />
       </section>
     </main>
   );

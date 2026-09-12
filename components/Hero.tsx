@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { partnerWhatsappLink, whatsappLink } from "@/lib/company";
+import { partnerWhatsappLink, salesLocationNames, whatsappLink } from "@/lib/company";
 
 export default function Hero() {
   return (
@@ -47,7 +47,9 @@ export default function Hero() {
             </a>
           </div>
 
-          <p className="mt-4 text-xs text-[var(--muted)]">Disponível em breve. Venda somente após regularização.</p>
+          <p className="mt-4 text-xs text-[var(--muted)]">
+            Disponível em {salesLocationNames}, em Gramado/RS.
+          </p>
 
           <div className="mt-5 flex flex-wrap gap-3">
             <a className="text-sm font-semibold text-[#e7d6a8] transition hover:text-[#f0ddb1]" href={whatsappLink} target="_blank" rel="noreferrer">
@@ -80,6 +82,9 @@ export default function Hero() {
             sizes="(max-width: 768px) 92vw, (max-width: 1280px) 50vw, 860px"
             className="h-[320px] w-full rounded-xl bg-[#0f1628] object-contain sm:h-[420px] md:h-[560px]"
           />
+          <figcaption className="px-2 pb-1 pt-3 text-center text-xs font-semibold uppercase tracking-[0.1em] text-[var(--muted)]">
+            Limoncello artesanal LIMONE GRAMADO · 275 ml · 30% vol
+          </figcaption>
         </figure>
       </div>
     </section>

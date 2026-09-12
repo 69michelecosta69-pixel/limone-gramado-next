@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { companyProfile, whatsappLink } from "@/lib/company";
+import { companyProfile, salesLocations, whatsappLink } from "@/lib/company";
 
 export default function Footer() {
   return (
@@ -19,6 +19,20 @@ export default function Footer() {
           <p className="font-semibold text-[var(--ink)]">{companyProfile.brandName}</p>
           <p>{companyProfile.locationDisplay}</p>
           <p>Telefone: {companyProfile.phoneDisplay}</p>
+          <div className="py-1">
+            <p className="font-semibold text-[var(--ink)]">Onde comprar</p>
+            {salesLocations.map((location) => (
+              <a
+                key={location.name}
+                href={location.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mr-3 inline-block text-[#e7d6a8] hover:text-[#f0ddb1]"
+              >
+                {location.name}
+              </a>
+            ))}
+          </div>
           <p>
             <a href="https://instagram.com/limone_gramado" target="_blank" rel="noreferrer" className="text-[#e7d6a8]">
               Instagram
