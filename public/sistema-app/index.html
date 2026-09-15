@@ -1,8 +1,18 @@
 <!doctype html>
+<!--
+  LIMONE GRAMADO - Sistema de Gestao
+  Autor e responsavel pelo projeto: Michele Costantino
+  Titular: LIMONE GRAMADO
+  Copyright (c) 2026 Michele Costantino / LIMONE GRAMADO. Todos os direitos reservados.
+  Codex/OpenAI foi utilizado somente como ferramenta de apoio ao desenvolvimento.
+-->
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="author" content="Michele Costantino">
+  <meta name="copyright" content="© 2026 Michele Costantino / LIMONE GRAMADO. Todos os direitos reservados.">
+  <meta name="application-name" content="LIMONE GRAMADO - Sistema de Gestão">
   <meta name="theme-color" content="#2f6b4f">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -15,21 +25,45 @@
 </head>
 <body>
   <div class="app-shell">
-    <header class="topbar">
-      <div>
+    <aside class="desktop-nav" aria-label="Módulos do sistema">
+      <div class="desktop-brand">
         <p class="eyebrow">LIMONE GRAMADO</p>
-        <h1 id="screen-title">Início</h1>
+        <strong>Gestão da empresa</strong>
       </div>
-      <div class="top-actions">
-        <span class="user-pill" id="user-pill" hidden></span>
-        <button class="switch-user-button" id="switch-user-button" type="button" hidden>Trocar</button>
-        <button class="icon-button" id="install-button" type="button" hidden aria-label="Instalar app">
-          <span aria-hidden="true">+</span>
-        </button>
-      </div>
-    </header>
+      <nav class="desktop-nav-list">
+        <button type="button" class="desktop-nav-item is-active" data-screen="home">Início</button>
+        <button type="button" class="desktop-nav-item" data-screen="production">Produção</button>
+        <button type="button" class="desktop-nav-item" data-screen="purchases">Compras</button>
+        <button type="button" class="desktop-nav-item" data-screen="stock">Estoque</button>
+        <button type="button" class="desktop-nav-item" data-screen="sales">Vendas</button>
+        <button type="button" class="desktop-nav-item" data-more="customers">Clientes</button>
+        <button type="button" class="desktop-nav-item" data-more="contacts">Contatos</button>
+        <button type="button" class="desktop-nav-item" data-more="recipes">Receitas</button>
+        <button type="button" class="desktop-nav-item" data-more="products">Produtos</button>
+        <button type="button" class="desktop-nav-item" data-more="costs">Custos</button>
+        <button type="button" class="desktop-nav-item" data-more="messages">Mensagens</button>
+        <button type="button" class="desktop-nav-item" data-more="tasks">Tarefas</button>
+        <button type="button" class="desktop-nav-item" data-more="reports">Relatórios</button>
+      </nav>
+      <p class="desktop-status" id="desktop-sync-status">Dados compartilhados</p>
+    </aside>
+    <div class="app-main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">LIMONE GRAMADO</p>
+          <h1 id="screen-title">Início</h1>
+        </div>
+        <div class="top-actions">
+          <span class="user-pill" id="user-pill" hidden></span>
+          <button class="switch-user-button" id="switch-user-button" type="button" hidden>Trocar</button>
+          <button class="icon-button" id="install-button" type="button" hidden aria-label="Instalar app">
+            <span aria-hidden="true">+</span>
+          </button>
+        </div>
+      </header>
 
-    <main id="app" class="content" aria-live="polite"></main>
+      <main id="app" class="content" aria-live="polite"></main>
+    </div>
 
     <nav class="bottom-nav" aria-label="Navegação principal">
       <button type="button" class="nav-item is-active" data-screen="home">Início</button>
@@ -48,6 +82,7 @@
     </div>
   </template>
 
-  <script src="app.js"></script>
+    <script src="price-calculator.js?v=1.0.40"></script>
+    <script src="app.js?v=1.0.40"></script>
 </body>
 </html>

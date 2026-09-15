@@ -1,7 +1,9 @@
 {
   "name": "LIMONE GRAMADO",
   "short_name": "LIMONE",
-  "description": "Controle simples de produção, compras, estoque, vendas, contatos e tarefas.",
+  "description": "Sistema de gestão da LIMONE GRAMADO. Autor e responsável: Michele Costantino.",
+  "author": "Michele Costantino / LIMONE GRAMADO",
+  "copyright": "© 2026 Michele Costantino / LIMONE GRAMADO. Todos os direitos reservados.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f7f4ee",

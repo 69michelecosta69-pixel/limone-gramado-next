@@ -1,0 +1,33 @@
+LIMONE GRAMADO - AVISO DE AUTORIA E DIREITOS
+
+Software:
+LIMONE GRAMADO - Sistema de Gestao
+Website publica, sistema online e app instalada.
+
+Autor e responsavel pelo projeto:
+Michele Costantino
+
+Titular / empresa:
+LIMONE GRAMADO
+
+Copyright:
+(c) 2026 Michele Costantino / LIMONE GRAMADO.
+Todos os direitos reservados.
+
+Data deste aviso:
+2026-07-26
+
+Enderecos oficiais:
+Website publica: https://www.limonegramado.com.br/
+Sistema interno: https://www.limonegramado.com.br/sistema
+
+Aviso:
+Codex/OpenAI foi utilizado somente como ferramenta de apoio ao desenvolvimento.
+O uso de ferramenta de IA nao transfere autoria nem titularidade do software.
+
+Nao e autorizada a remocao, alteracao ou ocultacao deste aviso, dos creditos,
+da marca LIMONE GRAMADO, dos metadados de autoria ou da documentacao de direitos
+sem autorizacao previa e por escrito de Michele Costantino / LIMONE GRAMADO.
+
+Este arquivo deve acompanhar copias do codigo-fonte, backups, instaladores,
+versoes publicadas e documentacao interna do projeto.
